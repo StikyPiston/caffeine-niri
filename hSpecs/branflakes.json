@@ -1,0 +1,8 @@
+{
+	"links": [
+		{ "source": "config/alacritty.branflakes",    "target": "~/.config/alacritty" },
+		{ "source": "config/constitution.branflakes", "target": "~/.config/constitution" },
+		{ "source": "config/niri.branflakes",         "target": "~/.config/niri" },
+		{ "source": "config/nvim.branflakes",         "target": "~/.config/nvim.branflakes" }
+	]
+}

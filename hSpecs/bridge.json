@@ -1,0 +1,9 @@
+{
+	"links": [
+		{ "source": "config/ghostty.bridge",  "target": "~/.config/ghostty" },
+		{ "source": "config/MangoHud.bridge", "target": "~/.config/MangoHud" },
+		{ "source": "config/hypr.bridge",     "target": "~/.config/hypr.bridge" },
+		{ "source": "config/niri.bridge",     "target": "~/.config/niri.bridge" },
+		{ "source": "config/nvim.bridge",     "target": "~/.config.nvim" } 
+	]
+}

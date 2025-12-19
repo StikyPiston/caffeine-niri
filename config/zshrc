@@ -38,7 +38,7 @@ alias nvimupdate='nv -c "lua vim.pack.update()" -c "w" -c "qall"'
 
 PS1='\w > '
 
-export PATH=$HOME/.local/share/bob/nightly/bin:$HOME/Documents/PlaydateSDK-3.0.2/bin:$HOME/Applications:$HOME/.scripts:$HOME/.cargo/bin:$HOME/.local/share/gem/ruby/3.4.0/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/Documents/PlaydateSDK-3.0.2/bin:$HOME/Applications:$HOME/.scripts:$HOME/.cargo/bin:$HOME/.local/share/gem/ruby/3.4.0/bin:$HOME/.local/bin:$PATH
 export BAT_THEME="Catppuccin Mocha"
 export EDITOR="/usr/bin/nvim"
 export PLAYDATE_SDK_PATH=/home/distrorockhopper/Documents/PlaydateSDK-3.0.2
@@ -49,6 +49,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export HOMEBREW_NO_ENV_HINTS=1
 eval "$(fzf --zsh)"
 recall list
+redcards amount
 printf "󰆈  %s\n" "$(shuf -n 1 ~/.scripts/motds.txt)"
 
 export FZF_DEFAULT_OPTS=" \

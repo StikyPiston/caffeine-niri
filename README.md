@@ -1,9 +1,9 @@
-# caffeine-niri
+# Cosmos-Hypr
 
-**caffeine-niri** is a Niri rice I created, with Catppuccin Macchiato colors!
+**Cosmos-Hypr** is a Hyprland rice I created, with Catppuccin Macchiato colors!
 
 ## Image
-![The rice in use](using.jpg)
+![The rice in use](using.png)
 
 ## Installation
 There are *two methods* to install this rice
@@ -16,14 +16,14 @@ Firstly, ensure you have **Dotkeeper** installed. Install **Dotkeeper** with:
 brew install stikypiston/formulae/dotkeeper
 ```
 
-Then, run `dotkeeper fetch https://github.com/StikyPiston/caffeine-niri`
+Then, run `dotkeeper fetch https://github.com/StikyPiston/cosmos-hypr`
 
-To activate the rice, ensure all dependencies are installed, and run `dotkeeper activate caffeine-niri`
+To activate the rice, ensure all dependencies are installed, and run `dotkeeper activate cosmos-hypr`
 
 ### Method 2 - Manual Install
 
-Run `git clone https://github.com/StikyPiston/caffeine-niri`
+Run `git clone https://github.com/StikyPiston/cosmos-hypr`
 
 Copy the contents of `config` to `~/.config/`
 
-Install any needed deps (Niri, waybar, wofi, fuzzel.), and there you go!
+Install any needed deps (hyprland, waybar, wofi, etc.), and there you go!

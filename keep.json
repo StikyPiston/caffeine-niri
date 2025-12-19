@@ -1,15 +1,11 @@
 {
 	"links": [
-		{ "source": "config/hypr",                 "target": "~/.config/hypr" },
 		{ "source": "config/kitty",                "target": "~/.config/kitty" },
 		{ "source": "config/waybar",               "target": "~/.config/waybar" },
 		{ "source": "config/wofi",                 "target": "~/.config/wofi" },
-		{ "source": "config/nvim",                 "target": "~/.config/nvim" },
 		{ "source": "config/fastfetch",            "target": "~/.config/fastfetch" },
-		{ "source": "config/ghostty",              "target": "~/.config/ghostty" },
 		{ "source": "config/bat",                  "target": "~/.config/bat" },
 		{ "source": "config/bashrc",               "target": "~/.bashrc" },
-		{ "source": "config/niri",                 "target": "~/.config/niri" },
 		{ "source": "config/gtk-3.0",              "target": "~/.config/gtk-3.0" },
 		{ "source": "config/gtk-4.0",              "target": "~/.config/gtk-4.0" },
 		{ "source": "config/starship.toml",        "target": "~/.config/starship.toml" },
@@ -26,12 +22,8 @@
 		{ "source": "config/zshrc",                "target": "~/.zshrc" },
 		{ "source": "config/fsh",                  "target": "~/.config/fsh" },
 		{ "source": "config/catppuccin.gitconfig", "target": "~/.config/catppuccin.gitconfig" },
-		{ "source": "config/MangoHud",             "target": "~/.config/MangoHud" },
 		{ "source": "config/wlogout",              "target": "~/.config/wlogout" },
 		{ "source": "config/amfora",               "target": "~/.config/amfora" },
-		{ "source": "config/zathura",              "target": "~/.config/zathura" },
-		{ "source": "config/constitution",         "target": "~/.config/constitution" },
-		{ "source": "config/alacritty",            "target": "~/.config/alacritty" },
-		{ "source": "config/swaylock",             "target": "~/.config/swaylock" }
+		{ "source": "config/zathura",              "target": "~/.config/zathura" }
 	]
 }
