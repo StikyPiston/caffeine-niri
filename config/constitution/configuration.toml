@@ -64,7 +64,8 @@ pacman = [
 	"ly",
 	"tmux",
 	"qutebrowser",
-	"flatpak"
+	"flatpak",
+	"network-manager-applet"
 ]
 
 aur = [
