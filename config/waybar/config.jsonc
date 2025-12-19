@@ -1,5 +1,5 @@
 {
-  "position": "top",
+  "position": "bottom",
   "modules-left": ["hyprland/workspaces", "niri/workspaces"],
   "modules-center": ["mpris"],
   "modules-right": ["tray", "custom/pacman", "temperature", "battery", "pulseaudio", "clock"],
