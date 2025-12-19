@@ -63,7 +63,8 @@ pacman = [
 	"rustup",
 	"ly",
 	"tmux",
-	"qutebrowser"
+	"qutebrowser",
+	"flatpak"
 ]
 
 aur = [
