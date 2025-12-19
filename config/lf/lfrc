@@ -1,0 +1,8 @@
+# Bind new movement keys
+map i k
+map k j
+map j h
+map l l
+
+# Settings
+set icons

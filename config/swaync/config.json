@@ -1,0 +1,8 @@
+{
+		"widgets": [
+				"title",
+				"dnd",
+				"notifications",
+				"mpris"
+		]
+}

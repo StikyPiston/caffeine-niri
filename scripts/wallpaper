@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+WALL_DIR="/home/distrorockhopper/Pictures/wallpapers/space"
+TARGET="/home/distrorockhopper/Pictures/wallpapers/currentpaper"
+
+# pick a random file
+random_file=$(find "$WALL_DIR" -type f | shuf -n 1)
+
+# remove old symlink or file
+rm -f "$TARGET"
+
+# create new symlink
+ln -s "$random_file" "$TARGET"
+
+pkill hyprpaper
+hyprpaper &

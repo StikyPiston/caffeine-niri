@@ -1,0 +1,76 @@
+# .zshrc
+
+# Plugin stuff
+source /home/linuxbrew/.linuxbrew/opt/zinit/zinit.zsh
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+
+alias ls='eza --icons=always --group-directories-first'
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -a1'
+
+alias mv='mv -v'
+alias cp='cp -v'
+alias rm='rm -v'
+alias mkdir='mkdir -v'
+alias tree='tree -LC 1'
+alias ncdu='ncdu --color dark --show-percent '
+alias clear='clear -x'
+
+alias nvi=nvim
+alias nv=nvim
+
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gd='git diff'
+alias gb='git blame'
+
+alias sb='soft browse'
+
+alias lg='lazygit'
+
+alias man='tldr'
+
+alias nvimupdate='nv -c "lua vim.pack.update()" -c "w" -c "qall"'
+
+PS1='\w > '
+
+export PATH=$HOME/.local/share/bob/nightly/bin:$HOME/Documents/PlaydateSDK-3.0.2/bin:$HOME/Applications:$HOME/.scripts:$HOME/.cargo/bin:$HOME/.local/share/gem/ruby/3.4.0/bin:$HOME/.local/bin:$PATH
+export BAT_THEME="Catppuccin Mocha"
+export EDITOR="/usr/bin/nvim"
+export PLAYDATE_SDK_PATH=/home/distrorockhopper/Documents/PlaydateSDK-3.0.2
+
+eval "$(starship init zsh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export HOMEBREW_NO_ENV_HINTS=1
+eval "$(fzf --zsh)"
+recall list
+printf "󰆈  %s\n" "$(shuf -n 1 ~/.scripts/motds.txt)"
+
+export FZF_DEFAULT_OPTS=" \
+		--tmux \
+		--preview 'bat --color=always {}' \
+		--color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+		--color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+		--color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+		--color=selected-bg:#45475A \
+		--color=border:#6C7086,label:#CDD6F4"
+
+function yz() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
+alias yazi=yz
+alias y=yz
+
+eval "$(zoxide init zsh)"
+
+alias cd=z
