@@ -3,7 +3,7 @@
 **caffeine-niri** is a Niri rice I created, with Catppuccin Macchiato colors!
 
 ## Image
-![The rice in use](using.png)
+![The rice in use](using.jpg)
 
 ## Installation
 There are *two methods* to install this rice
