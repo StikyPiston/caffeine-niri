@@ -20,7 +20,8 @@ brew = [
 	"fzf",
 	"ripgrep",
 	"bat",
-	"lutgen"
+	"lutgen",
+	"pipes-sh"
 ]
 
 flatpak = [
