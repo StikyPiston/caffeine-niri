@@ -67,7 +67,8 @@ pacman = [
 	"qutebrowser",
 	"flatpak",
 	"network-manager-applet",
-	"wget"
+	"wget",
+	"btop"
 ]
 
 aur = [
