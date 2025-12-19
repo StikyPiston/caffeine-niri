@@ -68,7 +68,8 @@ pacman = [
 	"flatpak",
 	"network-manager-applet",
 	"wget",
-	"btop"
+	"btop",
+	"imagemagick"
 ]
 
 aur = [
