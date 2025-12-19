@@ -4,7 +4,7 @@
   "modules-center": ["mpris"],
   "modules-right": ["tray", "custom/pacman", "temperature", "battery", "pulseaudio", "clock"],
   "clock": {
-    "format": "<span foreground='#89b4fa'> </span>{:%H:%M}",
+    "format": "<span foreground='#fab387'> </span>{:%H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "battery": {
@@ -12,13 +12,13 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span size='13000' foreground='#89dceb'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#89dceb'>{icon} </span> {capacity}%",
+    "format": "<span size='13000' foreground='#fab387'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#fab387'>{icon} </span> {capacity}%",
     "format-critical": "<span size='13000' foreground='#f38ba8'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#89dceb'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#89dceb'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#89dceb'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#89dceb'>󱟢 </span>{capacity}%",
+    "format-charging": "<span size='13000' foreground='#fab387'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#fab387'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#fab387'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#fab387'>󱟢 </span>{capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}"
   },

@@ -10,7 +10,7 @@
 window#waybar {
     background: transparent;
     background-color: @crust;
-    color: @blue;
+    color: @peach;
     transition-property: background-color;
     transition-duration: 0.1s;
     border-bottom: 1px solid @surface0;
@@ -30,8 +30,8 @@ button {
 
 button:hover {
     background: inherit;
-    color: @blue;
-    border-top: 2px solid @blue;
+    color: @peach;
+    border-top: 2px solid @peach;
 }
 
 #workspaces button {
@@ -40,14 +40,14 @@ button:hover {
 
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @blue;
-    border-top: 2px solid @blue;
+    color: @peach;
+    border-top: 2px solid @peach;
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @blue;
-    border-top: 2px solid @blue;
+    color: @peach;
+    border-top: 2px solid @peach;
 }
 
 #workspaces button.urgent {
@@ -76,23 +76,23 @@ button:hover {
 }
 
 #clock {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @peach;
+    border-bottom: 2px solid @peach;
 }
 
 #clock.date {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @peach;
+    border-bottom: 2px solid @peach;
 }
 
 #pulseaudio {
-    color: @sapphire;
-    border-bottom: 2px solid @sapphire;
+    color: @peach;
+    border-bottom: 2px solid @peach;
 }
 
 #network {
-    color: @lavender;
-    border-bottom: 2px solid @lavender;
+    color: @peach;
+    border-bottom: 2px solid @peach;
 }
 
 #idle_inhibitor {
@@ -101,12 +101,12 @@ button:hover {
 }
 
 #idle_inhibitor.activated {
-    color: @lavender;
+    color: @peach;
 }
 
 #battery {
-    color: @sky;
-    border-bottom: 2px solid @sky;
+    color: @peach;
+    border-bottom: 2px solid @peach;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -120,7 +120,7 @@ button:hover {
 }
 
 #custom-vpn {
-    color: @lavender;
+    color: @peach;
     border-radius: 15px;
     padding-left: 6px;
     padding-right: 6px;
@@ -132,18 +132,18 @@ button:hover {
 }
 
 #tray {
-    color: @yellow;
-	border-bottom: 2px solid @yellow;
+    color: @peach;
+	border-bottom: 2px solid @peach;
 }
 
 #temperature {
-		color: @sky;
-		border-bottom: 2px solid @sky;
+		color: @peach;
+		border-bottom: 2px solid @peach;
 }
 
 #custom-pacman {
-    color: @teal;
-    border-bottom: 2px solid @teal;
+    color: @peach;
+    border-bottom: 2px solid @peach;
     padding-top: 2px;
     padding-bottom: 2px;
 }
