@@ -19,7 +19,8 @@ brew = [
 	"tree-sitter-cli",
 	"fzf",
 	"ripgrep",
-	"bat"
+	"bat",
+	"lutgen"
 ]
 
 flatpak = [
