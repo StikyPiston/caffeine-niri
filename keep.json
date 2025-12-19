@@ -31,6 +31,7 @@
 		{ "source": "config/amfora",               "target": "~/.config/amfora" },
 		{ "source": "config/zathura",              "target": "~/.config/zathura" },
 		{ "source": "config/constitution",         "target": "~/.config/constitution" },
-		{ "source": "config/alacritty",            "target": "~/.config/alacritty" }
+		{ "source": "config/alacritty",            "target": "~/.config/alacritty" },
+		{ "source": "config/swaylock",             "target": "~/.config/swaylock" }
 	]
 }
