@@ -21,7 +21,8 @@ brew = [
 	"ripgrep",
 	"bat",
 	"lutgen",
-	"pipes-sh"
+	"pipes-sh",
+	"stikypiston/formulae/redcards"
 ]
 
 flatpak = [
