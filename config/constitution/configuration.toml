@@ -22,6 +22,10 @@ brew = [
 	"bat"
 ]
 
+flatpak = [
+	"app.zen_browser.zen"
+]
+
 pacman = [
 	"niri",
 	"waybar",
@@ -58,7 +62,8 @@ pacman = [
 	"zathura",
 	"rustup",
 	"ly",
-	"tmux"
+	"tmux",
+	"qutebrowser"
 ]
 
 aur = [
