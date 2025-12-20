@@ -71,7 +71,8 @@ pacman = [
 	"network-manager-applet",
 	"wget",
 	"btop",
-	"imagemagick"
+	"imagemagick",
+	"hyprpolkitagent"
 ]
 
 aur = [
