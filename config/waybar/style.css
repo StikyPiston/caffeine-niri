@@ -10,7 +10,7 @@
 window#waybar {
     background: transparent;
     background-color: @crust;
-    color: @peach;
+    color: @mauve;
     transition-property: background-color;
     transition-duration: 0.1s;
     border-bottom: 1px solid @surface0;
@@ -30,8 +30,8 @@ button {
 
 button:hover {
     background: inherit;
-    color: @peach;
-    border-top: 2px solid @peach;
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button {
@@ -40,14 +40,14 @@ button:hover {
 
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @peach;
-    border-top: 2px solid @peach;
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @peach;
-    border-top: 2px solid @peach;
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button.urgent {
@@ -76,18 +76,18 @@ button:hover {
 }
 
 #clock {
-    color: @peach;
-    border-bottom: 2px solid @peach;
+    color: @flamingo;
+    border-bottom: 2px solid @flamingo;
 }
 
 #clock.date {
-    color: @peach;
-    border-bottom: 2px solid @peach;
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
 }
 
 #pulseaudio {
-    color: @peach;
-    border-bottom: 2px solid @peach;
+    color: @pink;
+    border-bottom: 2px solid @pink;
 }
 
 #network {
@@ -105,8 +105,8 @@ button:hover {
 }
 
 #battery {
-    color: @peach;
-    border-bottom: 2px solid @peach;
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -127,23 +127,23 @@ button:hover {
 }
 
 #mpris {
-    color: @peach;
-    border-bottom: 2px solid @peach;
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
 }
 
 #tray {
-    color: @peach;
-	border-bottom: 2px solid @peach;
+    color: @overlay1;
+	border-bottom: 2px solid @overlay1;
 }
 
 #temperature {
-		color: @peach;
-		border-bottom: 2px solid @peach;
+		color: @mauve;
+		border-bottom: 2px solid @mauve;
 }
 
 #custom-pacman {
-    color: @peach;
-    border-bottom: 2px solid @peach;
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
     padding-top: 2px;
     padding-bottom: 2px;
 }
