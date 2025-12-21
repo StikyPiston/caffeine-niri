@@ -5,8 +5,12 @@
       "src": "https://github.com/NStefan002/2048.nvim"
     },
     "blink.cmp": {
-      "rev": "37ce860d8eeeee92d60b9a72db21e369d97e6a75",
+      "rev": "507424257ba992259f2073ac7ec540af506a0899",
       "src": "https://github.com/saghen/blink.cmp"
+    },
+    "cheaty.nvim": {
+      "rev": "9fb25a45e2a16fb5aac003d96647412417e61584",
+      "src": "https://github.com/stikypiston/cheaty.nvim"
     },
     "coinflip.nvim": {
       "rev": "41a60a4297825eb10ffd4d4d6c01eaf8b4d66bc8",
@@ -41,7 +45,7 @@
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "lazygit.nvim": {
-      "rev": "2305deed25bc61b866d5d39189e9105a45cf1cfb",
+      "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
       "src": "https://github.com/kdheepak/lazygit.nvim"
     },
     "lualine.nvim": {
@@ -61,7 +65,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "a995fe9cd4193fb492b5df69175a351a74b3d36b",
+      "rev": "6170f606fbdb94bf461635c47962f61dceffe496",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neowiki.nvim": {
@@ -89,7 +93,7 @@
       "src": "https://github.com/brenoprata10/nvim-highlight-colors"
     },
     "nvim-lspconfig": {
-      "rev": "c4f67bf85b01a57e3c130352c0a0e453ab8cd5b9",
+      "rev": "d20d83b3f24f5884da73a9fc92fdc47e778b8d0d",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -97,11 +101,11 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "8dcb311b0c92d460fac00eac706abd43d94d68af",
+      "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
+      "rev": "3b249b71957ee35d5adbfb21f77992809a4c4683",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "pkl-neovim": {
@@ -129,7 +133,7 @@
       "src": "https://github.com/charmbracelet/tree-sitter-vhs"
     },
     "triforce.nvim": {
-      "rev": "9eca022c303e3b86ad0c6684e37b08618667e3cf",
+      "rev": "b58bedd97d5db2ff5c769454545673ae718a7cde",
       "src": "https://github.com/gisketch/triforce.nvim"
     },
     "typr": {

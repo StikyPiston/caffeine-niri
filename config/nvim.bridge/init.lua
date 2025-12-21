@@ -84,7 +84,8 @@ vim.pack.add({
 	"https://github.com/saghen/blink.cmp",
 	"https://github.com/folke/lazydev.nvim",
 	"https://github.com/piersolenski/skifree.nvim",
-	"https://github.com/chentoast/marks.nvim"
+	"https://github.com/chentoast/marks.nvim",
+	"https://github.com/stikypiston/cheaty.nvim"
 })
 
 -- Treesitter Setup
@@ -176,6 +177,12 @@ require("marks").setup({
 	},
 
 	builtin_marks = { "." }
+})
+require("cheaty").setup({
+	keymap = "<leader>cs",
+	cheatsheet = {
+		"# Cheatsheet"
+	}
 })
 
 -- Hijinks in LSP land
