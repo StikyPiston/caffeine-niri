@@ -181,7 +181,19 @@ require("marks").setup({
 require("cheaty").setup({
 	keymap = "<leader>cs",
 	cheatsheet = {
-		"# Cheatsheet"
+		"# Cheatsheet",
+		"- gq         : Wrap to 80-character long lines",
+		"- : [visual] : do the '<,'> thing",
+		"- g??        : ROT13 the current line for some reason",
+		"- <leader>r  : :%s/",
+		"- m[letter]  : Create mark of that letter",
+		"- '[letter]  : Go to mark of that letter",
+		"- m<         : Go to previous mark",
+		"- m>         : Go to next mark",
+		"- m.         : Go to last-edited line",
+		"- <leader>ow : Open NeoWiki",
+		"- <leader>oW : Open floating NeoWiki",
+		"- <leader>ms : Open Mindmap of current file",
 	}
 })
 
