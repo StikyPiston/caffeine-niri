@@ -50,6 +50,7 @@ export HOMEBREW_NO_ENV_HINTS=1
 eval "$(fzf --zsh)"
 recall list
 redcards amount
+hocusfocus currentsession
 printf "󰆈  %s\n" "$(shuf -n 1 ~/.scripts/motds.txt)"
 
 export FZF_DEFAULT_OPTS=" \
