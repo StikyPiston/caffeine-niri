@@ -76,6 +76,7 @@ spawn-at-startup "swww-daemon"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "alertify"
 spawn-at-startup "systemctl" "--user" "start" "hyprpolkitagent"
+spawn-at-startup "mpd"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
