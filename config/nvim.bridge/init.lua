@@ -82,7 +82,8 @@ vim.pack.add({
 	"https://github.com/Zeioth/markmap.nvim",
 	"https://github.com/saghen/blink.cmp",
 	"https://github.com/folke/lazydev.nvim",
-	"https://github.com/piersolenski/skifree.nvim"
+	"https://github.com/piersolenski/skifree.nvim",
+	"https://github.com/chentoast/marks.nvim"
 })
 
 -- Treesitter Setup
@@ -166,6 +167,15 @@ require("markmap").setup({
 })
 require("blink.cmp").setup()
 require("lazydev").setup()
+require("marks").setup({
+	mappings = {
+		set_next = "m,",
+		next     = "m>",
+		prev     = "m<"
+	},
+
+	builtin_marks = { "." }
+})
 
 -- Hijinks in LSP land
 

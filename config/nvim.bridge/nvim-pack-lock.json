@@ -52,6 +52,10 @@
       "rev": "c09ad672404d050e8665e3094f892b87cf17d8cb",
       "src": "https://github.com/Zeioth/markmap.nvim"
     },
+    "marks.nvim": {
+      "rev": "f353e8c08c50f39e99a9ed474172df7eddd89b72",
+      "src": "https://github.com/chentoast/marks.nvim"
+    },
     "mason.nvim": {
       "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800",
       "src": "https://github.com/mason-org/mason.nvim"
