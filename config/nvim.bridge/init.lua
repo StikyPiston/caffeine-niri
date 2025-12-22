@@ -85,7 +85,8 @@ vim.pack.add({
 	"https://github.com/folke/lazydev.nvim",
 	"https://github.com/piersolenski/skifree.nvim",
 	"https://github.com/chentoast/marks.nvim",
-	"https://github.com/stikypiston/cheaty.nvim"
+	"https://github.com/stikypiston/cheaty.nvim",
+	"https://github.com/lewis6991/gitsigns.nvim"
 })
 
 -- Treesitter Setup
