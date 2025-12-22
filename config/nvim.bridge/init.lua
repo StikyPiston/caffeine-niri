@@ -89,25 +89,31 @@ vim.pack.add({
 })
 
 -- Treesitter Setup
-require("nvim-treesitter.configs").setup({
-	ensure_installed = { "c", "lua", "swift", "ruby", "hyprlang", "bash", "go", "gomod", "gosum", "kdl", "pkl", "markdown", "markdown_inline", "python", "vhs", "html", "latex", "yaml", "typst" },
-
-	sync_install = false,
-
-	auto_install = true,
-
-	highlight = {
-		enable = true,
-	},
-
-	incremental_selection = {
-		enable = true,
-	},
-
-	indent = {
-		enable = true,
-	},
+require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'latex', 'yaml', 'typst' })
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = { '<filetype>' },
+	callback = function() vim.treesitter.start() end
 })
+vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+-- require("nvim-treesitter.configs").setup({
+-- 	ensure_installed = { "c", "lua", "swift", "ruby", "hyprlang", "bash", "go", "gomod", "gosum", "kdl", "markdown", "markdown_inline", "python", "vhs", "html", "latex", "yaml", "typst" },
+-- 
+-- 	sync_install = false,
+-- 
+-- 	auto_install = true,
+-- 
+-- 	highlight = {
+-- 		enable = true,
+-- 	},
+-- 
+-- 	incremental_selection = {
+-- 		enable = true,
+-- 	},
+-- 
+-- 	indent = {
+-- 		enable = true,
+-- 	},
+-- })
 
 -- Theming
 vim.cmd.colorscheme "catppuccin-mocha"
