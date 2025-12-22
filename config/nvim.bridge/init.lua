@@ -90,7 +90,7 @@ vim.pack.add({
 })
 
 -- Treesitter Setup
-require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'latex', 'yaml', 'typst' })
+require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'latex', 'yaml', 'typst', 'zsh' })
 vim.api.nvim_create_autocmd('FileType', {
 	pattern = { '<filetype>' },
 	callback = function() vim.treesitter.start() end
