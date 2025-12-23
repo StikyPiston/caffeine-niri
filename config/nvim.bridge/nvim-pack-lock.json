@@ -9,7 +9,7 @@
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
     "blink.cmp": {
-      "rev": "507424257ba992259f2073ac7ec540af506a0899",
+      "rev": "ceed1545929b74cf79b5a8950e7c415683bf690b",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "cheaty.nvim": {
@@ -29,7 +29,7 @@
       "src": "https://github.com/folke/flash.nvim"
     },
     "fzf-lua": {
-      "rev": "9d579feab4d3035627150e5e9b6e8fbf5e814ef6",
+      "rev": "b1d2b0dc146cb9260209da4d7ab754adb0a2653d",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "fzf-nerdfont.nvim": {
@@ -97,7 +97,7 @@
       "src": "https://github.com/brenoprata10/nvim-highlight-colors"
     },
     "nvim-lspconfig": {
-      "rev": "d20d83b3f24f5884da73a9fc92fdc47e778b8d0d",
+      "rev": "5eeb45c8c469b84777a5bd8796b698c8a1c780a7",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
