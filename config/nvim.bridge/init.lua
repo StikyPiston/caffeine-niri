@@ -86,7 +86,8 @@ vim.pack.add({
 	"https://github.com/piersolenski/skifree.nvim",
 	"https://github.com/chentoast/marks.nvim",
 	"https://github.com/stikypiston/cheaty.nvim",
-	"https://github.com/lewis6991/gitsigns.nvim"
+	"https://github.com/lewis6991/gitsigns.nvim",
+	"https://github.com/m4xshen/autoclose.nvim"
 })
 
 -- Treesitter Setup
@@ -184,6 +185,7 @@ require("cheaty").setup({
 		"- <leader>ms : Open Mindmap of current file",
 	}
 })
+require("autoclose").setup()
 
 -- Hijinks in LSP land
 

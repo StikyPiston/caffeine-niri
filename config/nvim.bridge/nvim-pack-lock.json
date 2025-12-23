@@ -4,6 +4,10 @@
       "rev": "aee7c41a9a9473117465132768ae4b4da97435c3",
       "src": "https://github.com/NStefan002/2048.nvim"
     },
+    "autoclose.nvim": {
+      "rev": "3f86702b54a861a17d7994b2e32a7c648cb12fb1",
+      "src": "https://github.com/m4xshen/autoclose.nvim"
+    },
     "blink.cmp": {
       "rev": "507424257ba992259f2073ac7ec540af506a0899",
       "src": "https://github.com/saghen/blink.cmp"
