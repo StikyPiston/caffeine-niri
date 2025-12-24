@@ -77,6 +77,7 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "alertify"
 spawn-at-startup "systemctl" "--user" "start" "hyprpolkitagent"
 spawn-at-startup "mpd"
+spawn-at-startup "indicator-stickynotes"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
@@ -98,6 +99,15 @@ window-rule {
 	match app-id=r#"^nemo"#
 	opacity 0.9
 	draw-border-with-background false
+}
+
+window-rule {
+	match app-id=r#"^indicator-stickynotes"#
+
+	open-floating true
+
+	max-width 250
+	max-height 200
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
