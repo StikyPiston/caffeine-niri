@@ -187,6 +187,7 @@ require("cheaty").setup({
 	}
 })
 require("autoclose").setup()
+require("studytools.inlineannotations").setup() 
 
 -- Hijinks in LSP land
 

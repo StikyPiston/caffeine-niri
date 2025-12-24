@@ -132,6 +132,10 @@
       "rev": "565ba7d5dfa29a67027434906c40f5bb06d0b8ae",
       "src": "https://github.com/piersolenski/skifree.nvim"
     },
+    "studytools.nvim": {
+      "rev": "e089ff8c8c2e37d6fd40926366ee290f463640e0",
+      "src": "https://github.com/stikypiston/studytools.nvim"
+    },
     "tree-sitter-vhs": {
       "rev": "0c6fae9d2cfc5b217bfd1fe84a7678f5917116db",
       "src": "https://github.com/charmbracelet/tree-sitter-vhs"
