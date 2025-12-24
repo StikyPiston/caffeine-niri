@@ -188,6 +188,7 @@ require("cheaty").setup({
 })
 require("autoclose").setup()
 require("studytools.inlineannotations").setup() 
+require("studytools.pomodoro").setup()
 
 -- Hijinks in LSP land
 
