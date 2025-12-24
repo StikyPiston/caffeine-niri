@@ -87,7 +87,8 @@ vim.pack.add({
 	"https://github.com/chentoast/marks.nvim",
 	"https://github.com/stikypiston/cheaty.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
-	"https://github.com/m4xshen/autoclose.nvim"
+	"https://github.com/m4xshen/autoclose.nvim",
+	"https://github.com/stikypiston/studytools.nvim"
 })
 
 -- Treesitter Setup
