@@ -25,6 +25,7 @@
 		{ "source": "config/wlogout",              "target": "~/.config/wlogout" },
 		{ "source": "config/amfora",               "target": "~/.config/amfora" },
 		{ "source": "config/zathura",              "target": "~/.config/zathura" },
-		{ "source": "config/wallpaper.jpg",        "target": "~/.wallpaper" }
+		{ "source": "config/wallpaper.jpg",        "target": "~/.wallpaper" },
+		{ "source": "config/pricetag",             "target": "~/.config/pricetag" }
 	]
 }
