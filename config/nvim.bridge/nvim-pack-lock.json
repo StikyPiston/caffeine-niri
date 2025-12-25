@@ -141,7 +141,7 @@
       "src": "https://github.com/charmbracelet/tree-sitter-vhs"
     },
     "triforce.nvim": {
-      "rev": "b58bedd97d5db2ff5c769454545673ae718a7cde",
+      "rev": "f2b7df59c9b5ea92e757f2c00331cca8d96e4b78",
       "src": "https://github.com/gisketch/triforce.nvim"
     },
     "typr": {
