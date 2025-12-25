@@ -20,7 +20,7 @@ vim.g.mapleader      = " "
 map('n', ';',          'i', opts)
 map('i', '<A-o>',      '<C-x><C-o>', opts)
 map('n', 'tT',         ':Oil<CR>')
-map('n', 'fF',         ':Pick files<CR>')
+map('n', 'fF',         function() require("telescope.builtin").find_files() end)
 map('n', 'dD',         ':Dashboard<CR>')
 map('n', 'pP',         ':RenderMarkdown toggle<CR>')
 map('n', 'hH',         ':tabNext<CR>')
@@ -88,7 +88,8 @@ vim.pack.add({
 	"https://github.com/stikypiston/cheaty.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/m4xshen/autoclose.nvim",
-	"https://github.com/stikypiston/studytools.nvim"
+	"https://github.com/stikypiston/studytools.nvim",
+	"https://github.com/nvim-telescope/telescope.nvim"
 })
 
 -- Treesitter Setup
@@ -110,7 +111,6 @@ vim.api.nvim_set_hl(0, "SignColumn",  { bg = "#1e2030" })
 -- Plugin Setup
 require("mason").setup()
 require("mini.icons").setup()
-require("mini.pick").setup()
 require("mini.tabline").setup()
 require("mini.starter").setup()
 require("mini.notify").setup()
@@ -187,7 +187,7 @@ require("cheaty").setup({
 	}
 })
 require("autoclose").setup()
-require("studytools.inlineannotations").setup() 
+require("studytools.inlineannotations").setup()
 require("studytools.pomodoro").setup()
 
 -- Hijinks in LSP land
