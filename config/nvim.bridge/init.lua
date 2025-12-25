@@ -48,6 +48,8 @@ map('n', '<leader>cf', function() require("coinflip").flip() end)
 map('n', '<leader>mo', ':MarkmapOpen')
 map('n', '<leader>ms', ':MarkmapSave')
 map('n', '<leader>r',  ':%s/')
+map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
+map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
 
 -- Packing it up in here :P
 vim.pack.add({
@@ -173,18 +175,28 @@ require("cheaty").setup({
 	keymap = "<leader>cs",
 	cheatsheet = {
 		"# Cheatsheet",
+		"",
+		"## Basics",
 		"- gq         : Wrap to 80-character long lines",
 		"- : [visual] : do the '<,'> thing",
 		"- g??        : ROT13 the current line for some reason",
 		"- <leader>r  : :%s/",
+		"",
+		"## Marks",
 		"- m[letter]  : Create mark of that letter",
 		"- '[letter]  : Go to mark of that letter",
 		"- m<         : Go to previous mark",
 		"- m>         : Go to next mark",
 		"- m.         : Go to last-edited line",
+		"",
+		"## NeoWiki",
 		"- <leader>ow : Open NeoWiki",
 		"- <leader>oW : Open floating NeoWiki",
 		"- <leader>ms : Open Mindmap of current file",
+		"",
+		"## Studytools",
+		"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
+		"- <leader>sP : Pomodoro timer status",
 	}
 })
 require("autoclose").setup()
