@@ -133,7 +133,7 @@
       "src": "https://github.com/piersolenski/skifree.nvim"
     },
     "studytools.nvim": {
-      "rev": "f310ea814c0266977d0245f1258edffab9d5de85",
+      "rev": "0d743257d02d67da160cb661a477cc71a836739d",
       "src": "https://github.com/stikypiston/studytools.nvim"
     },
     "telescope.nvim": {

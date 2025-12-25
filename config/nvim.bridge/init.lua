@@ -50,6 +50,7 @@ map('n', '<leader>ms', ':MarkmapSave')
 map('n', '<leader>r',  ':%s/')
 map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
 map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
+map('n', '<leader>bb', ':StudytoolsBlurt<CR>')
 
 -- Packing it up in here :P
 vim.pack.add({
@@ -202,6 +203,7 @@ require("cheaty").setup({
 require("autoclose").setup()
 require("studytools.inlineannotations").setup()
 require("studytools.pomodoro").setup()
+require("studytools.blurt").setup()
 
 -- Hijinks in LSP land
 
