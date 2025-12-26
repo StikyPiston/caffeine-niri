@@ -83,7 +83,6 @@ vim.pack.add({
 	"https://github.com/StikyPiston/coinflip.nvim",
 	"https://github.com/NStefan002/2048.nvim",
 	"https://github.com/sqwxl/playdate.nvim",
-	"https://github.com/3rd/image.nvim",
 	"https://github.com/Zeioth/markmap.nvim",
 	"https://github.com/saghen/blink.cmp",
 	"https://github.com/folke/lazydev.nvim",
@@ -93,7 +92,8 @@ vim.pack.add({
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/m4xshen/autoclose.nvim",
 	"https://github.com/stikypiston/studytools.nvim",
-	"https://github.com/nvim-telescope/telescope.nvim"
+	"https://github.com/nvim-telescope/telescope.nvim",
+	"https://github.com/folke/snacks.nvim"
 })
 
 -- Treesitter Setup
@@ -155,7 +155,6 @@ require("playdate").setup({
 		output_dir = "build.pdx"
 	}
 })
-require("image").setup()
 require("markmap").setup({
 	html_output  = "/tmp/markmap.html",
 	hide_toolbar = false,
@@ -204,6 +203,9 @@ require("autoclose").setup()
 require("studytools.inlineannotations").setup()
 require("studytools.pomodoro").setup()
 require("studytools.blurt").setup()
+require("snacks").setup({
+	image = {}
+})
 
 -- Hijinks in LSP land
 

@@ -132,6 +132,10 @@
       "rev": "565ba7d5dfa29a67027434906c40f5bb06d0b8ae",
       "src": "https://github.com/piersolenski/skifree.nvim"
     },
+    "snacks.nvim": {
+      "rev": "fe7cfe9800a182274d0f868a74b7263b8c0c020b",
+      "src": "https://github.com/folke/snacks.nvim"
+    },
     "studytools.nvim": {
       "rev": "0d743257d02d67da160cb661a477cc71a836739d",
       "src": "https://github.com/stikypiston/studytools.nvim"
