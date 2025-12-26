@@ -146,7 +146,7 @@ require("lualine").setup({
 	}
 })
 require("triforce").setup()
-require("nvim-highlight-colors").setup()
+require("nvim-highlight-colors").setup({})
 require("2048").setup()
 require("playdate").setup({
 	playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
