@@ -288,3 +288,8 @@ vim.lsp.enable("pyright")
 
 -- > Swift LSP
 vim.lsp.enable("sourcekit")
+
+-- Inline diagnostics
+vim.diagnostic.config({
+	virtual_text = true
+})
