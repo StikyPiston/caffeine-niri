@@ -37,7 +37,7 @@
       "src": "https://github.com/stephansama/fzf-nerdfont.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "5813e4878748805f1518cee7abb50fd7205a3a48",
+      "rev": "e895b811bc63d8e9b9c93216f1fe99c51280c769",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "image.nvim": {
@@ -137,7 +137,7 @@
       "src": "https://github.com/folke/snacks.nvim"
     },
     "studytools.nvim": {
-      "rev": "0d743257d02d67da160cb661a477cc71a836739d",
+      "rev": "12534383700b0835fe541f0cbdae99add975c4c8",
       "src": "https://github.com/stikypiston/studytools.nvim"
     },
     "telescope.nvim": {
