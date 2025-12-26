@@ -93,7 +93,9 @@ vim.pack.add({
 	"https://github.com/m4xshen/autoclose.nvim",
 	"https://github.com/stikypiston/studytools.nvim",
 	"https://github.com/nvim-telescope/telescope.nvim",
-	"https://github.com/folke/snacks.nvim"
+	"https://github.com/folke/snacks.nvim",
+	"https://github.com/chrisgrieser/nvim-origami",
+	"https://github.com/folke/which-key.nvim"
 })
 
 -- Treesitter Setup
@@ -181,6 +183,7 @@ require("cheaty").setup({
 		"- : [visual] : do the '<,'> thing",
 		"- g??        : ROT13 the current line for some reason",
 		"- <leader>r  : :%s/",
+		"- ~          : Toggle case of character under cursor",
 		"",
 		"## Marks",
 		"- m[letter]  : Create mark of that letter",
@@ -197,7 +200,15 @@ require("cheaty").setup({
 		"## Studytools",
 		"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
 		"- <leader>sP : Pomodoro timer status",
-		"- <leader>bb : Start blurting buffer"
+		"- <leader>bb : Start blurting buffer",
+		"## Folding",
+		"- zc         : Fold",
+		"- zM         : Fold all",
+		"- zo         : Unfold",
+		"- zO         : Unfold all under cursor",
+		"- zr         : Unfold all one level",
+		"- zf         : Create fold",
+		"- za         : Toggle fold under cursor"
 	}
 })
 require("autoclose").setup()
@@ -206,6 +217,17 @@ require("studytools.pomodoro").setup()
 require("studytools.blurt").setup()
 require("snacks").setup({
 	image = {}
+})
+require("origami").setup({
+	autoFold = {
+		enabled = false
+	}
+})
+require("which-key").setup({
+	preset = "helix",
+	layout = {
+		align = "right"
+	}
 })
 
 -- Hijinks in LSP land

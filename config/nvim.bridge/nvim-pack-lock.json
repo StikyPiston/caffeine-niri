@@ -100,6 +100,10 @@
       "rev": "8973916a3d015d65a8c4614e141f4270a713cf33",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
+    "nvim-origami": {
+      "rev": "dfa7e718eddcd7de7192a9e580d4fe13e985dc07",
+      "src": "https://github.com/chrisgrieser/nvim-origami"
+    },
     "nvim-treesitter": {
       "rev": "6e42d823ce0a5a76180c473c119c7677738a09d1",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -163,6 +167,10 @@
     "volt": {
       "rev": "620de1321f275ec9d80028c68d1b88b409c0c8b1",
       "src": "https://github.com/nvzone/volt"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
     }
   }
 }
