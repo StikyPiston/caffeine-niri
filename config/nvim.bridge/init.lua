@@ -197,6 +197,7 @@ require("cheaty").setup({
 		"## Studytools",
 		"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
 		"- <leader>sP : Pomodoro timer status",
+		"- <leader>bb : Start blurting buffer"
 	}
 })
 require("autoclose").setup()
