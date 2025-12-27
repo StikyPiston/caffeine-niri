@@ -15,6 +15,8 @@ vim.o.mousemoveevent = true
 vim.o.number         = true
 vim.o.shiftwidth     = 4
 vim.g.mapleader      = " "
+vim.o.foldlevel      = 99
+vim.o.foldlevelstart = 99
 
 -- Bindings
 map('n', ';',          'i', opts)
