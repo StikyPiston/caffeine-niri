@@ -37,7 +37,7 @@
       "src": "https://github.com/stephansama/fzf-nerdfont.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "718e1eda17ebab87f686af5dcc7684b204041eef",
+      "rev": "bf77caa5da671f5bab16e4792711d5aa288e8db0",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "image.nvim": {
@@ -73,7 +73,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "7e55c3d2c04da134085a31156196836f80a89982",
+      "rev": "e7a8e5a0920df1435172d42fb32e474bbb30d021",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neowiki.nvim": {
@@ -101,11 +101,11 @@
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-origami": {
-      "rev": "dfa7e718eddcd7de7192a9e580d4fe13e985dc07",
+      "rev": "624dae984437059925a6139288f1911b8740f067",
       "src": "https://github.com/chrisgrieser/nvim-origami"
     },
     "nvim-treesitter": {
-      "rev": "45d08da7bb3ea206d698b33f0576fdf9661e2979",
+      "rev": "36fcb4a4238928f0b627e1ab84ade0acc1facc2c",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
@@ -153,7 +153,7 @@
       "src": "https://github.com/charmbracelet/tree-sitter-vhs"
     },
     "triforce.nvim": {
-      "rev": "f2b7df59c9b5ea92e757f2c00331cca8d96e4b78",
+      "rev": "a94e0edd9176f0d7bcf7557398c0960a71777ccc",
       "src": "https://github.com/gisketch/triforce.nvim"
     },
     "typr": {
