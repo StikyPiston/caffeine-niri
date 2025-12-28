@@ -26,6 +26,7 @@
 		{ "source": "config/amfora",               "target": "~/.config/amfora" },
 		{ "source": "config/zathura",              "target": "~/.config/zathura" },
 		{ "source": "config/wallpaper.jpg",        "target": "~/.wallpaper" },
-		{ "source": "config/pricetag",             "target": "~/.config/pricetag" }
+		{ "source": "config/pricetag",             "target": "~/.config/pricetag" },
+		{ "source": "config/helix",                "target": "~/.config/helix" }
 	]
 }
