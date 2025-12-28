@@ -316,6 +316,9 @@ vim.lsp.enable("pyright")
 -- > Swift LSP
 vim.lsp.enable("sourcekit")
 
+-- > Go LSP
+vim.lsp.enable("gopls")
+
 -- Inline diagnostics
 vim.diagnostic.config({
 	virtual_text = true
