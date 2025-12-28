@@ -219,7 +219,8 @@ require("studytools.inlineannotations").setup()
 require("studytools.pomodoro").setup()
 require("studytools.blurt").setup()
 require("snacks").setup({
-	image = {}
+	image     = {},
+	quickfile = {}
 })
 require("origami").setup({
 	autoFold = {
