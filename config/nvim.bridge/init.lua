@@ -1,6 +1,7 @@
 -- Shorthands
 local map  = vim.keymap.set
 local opts = { noremap = true, silent = true }
+local noop = function() end
 
 -- Options
 vim.o.signcolumn     = "yes"
@@ -17,6 +18,25 @@ vim.o.shiftwidth     = 4
 vim.g.mapleader      = " "
 vim.o.foldlevel      = 99
 vim.o.foldlevelstart = 99
+
+-- Unbind HJKL and arrows
+map({ "n", "v", "o" }, "<Up>", noop)
+map({ "n", "v", "o" }, "<Down>", noop)
+map({ "n", "v", "o" }, "<Left>", noop)
+map({ "n", "v", "o" }, "<Right>", noop)
+
+
+map({ "n", "v", "o" }, "h", noop)
+map({ "n", "v", "o" }, "j", noop)
+map({ "n", "v", "o" }, "k", noop)
+map({ "n", "v", "o" }, "l", noop)
+map({ "n", "v", "o" }, "i", noop)
+
+-- Bind IJKL as movement keys
+map({ "n", "v", "o" }, "i", "k")
+map({ "n", "v", "o" }, "k", "j")
+map({ "n", "v", "o" }, "j", "h")
+map({ "n", "v", "o" }, "l", "l")
 
 -- Bindings
 map('n', ';',          'i', opts)
