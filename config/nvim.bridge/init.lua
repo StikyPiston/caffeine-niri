@@ -73,6 +73,9 @@ map('n', '<leader>r',  ':%s/')
 map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
 map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
 map('n', '<leader>bb', ':StudytoolsBlurt<CR>')
+map('n', '<Up>',       function() require("multicursor-nvim").lineAddCursor(-1) end)
+map('n', '<Down>',     function() require("multicursor-nvim").lineAddCursor(1) end)
+map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 
 -- Packing it up in here :P
 vim.pack.add({
@@ -117,7 +120,8 @@ vim.pack.add({
 	"https://github.com/nvim-telescope/telescope.nvim",
 	"https://github.com/folke/snacks.nvim",
 	"https://github.com/chrisgrieser/nvim-origami",
-	"https://github.com/folke/which-key.nvim"
+	"https://github.com/folke/which-key.nvim",
+	"https://github.com/jake-stewart/multicursor.nvim"
 })
 
 -- Treesitter Setup
@@ -255,6 +259,7 @@ require("which-key").setup({
 		align = "right"
 	}
 })
+require("multicursor-nvim").setup()
 
 -- Hijinks in LSP land
 
