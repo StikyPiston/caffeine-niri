@@ -73,8 +73,8 @@ map('n', '<leader>r',  ':%s/')
 map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
 map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
 map('n', '<leader>bb', ':StudytoolsBlurt<CR>')
-map('n', '<Up>',       function() require("multicursor-nvim").lineAddCursor(-1) end)
-map('n', '<Down>',     function() require("multicursor-nvim").lineAddCursor(1) end)
+map('n', '<C-Up>',       function() require("multicursor-nvim").lineAddCursor(-1) end)
+map('n', '<C-Down>',     function() require("multicursor-nvim").lineAddCursor(1) end)
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 
 -- Packing it up in here :P
