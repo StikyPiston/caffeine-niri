@@ -19,12 +19,12 @@ vim.g.mapleader      = " "
 vim.o.foldlevel      = 99
 vim.o.foldlevelstart = 99
 
--- Unbind HJKL and arrows
-map({ "n", "v", "o" }, "<Up>", noop)
-map({ "n", "v", "o" }, "<Down>", noop)
-map({ "n", "v", "o" }, "<Left>", noop)
+-- Unbind things
+map({ "n", "v", "o" }, "<Up>",    noop)
+map({ "n", "v", "o" }, "<Down>",  noop)
+map({ "n", "v", "o" }, "<Left>",  noop)
 map({ "n", "v", "o" }, "<Right>", noop)
-
+map("n",               "v",       "<C-v>")
 
 map({ "n", "v", "o" }, "h", noop)
 map({ "n", "v", "o" }, "j", noop)
