@@ -36,6 +36,8 @@ alias man='tldr'
 
 alias nvimupdate='nv -c "lua vim.pack.update()" -c "w" -c "qall"'
 
+bindkey " " magic-space
+
 PS1='\w > '
 
 export PATH=$HOME/.local/share/bob/nvim-bin:$HOME/Documents/PlaydateSDK-3.0.2/bin:$HOME/Applications:$HOME/.scripts:$HOME/.cargo/bin:$HOME/.local/share/gem/ruby/3.4.0/bin:$HOME/.local/bin:$PATH
