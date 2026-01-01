@@ -42,7 +42,7 @@ PS1='\w > '
 
 export PATH=$HOME/.local/share/bob/nvim-bin:$HOME/Documents/PlaydateSDK-3.0.2/bin:$HOME/Applications:$HOME/.scripts:$HOME/.cargo/bin:$HOME/.local/share/gem/ruby/3.4.0/bin:$HOME/.local/bin:$PATH
 export BAT_THEME="Catppuccin Mocha"
-export EDITOR="/usr/bin/nvim"
+export EDITOR="/home/distrorockhopper/.local/share/bob/nvim-bin/nvim"
 export PLAYDATE_SDK_PATH=/home/distrorockhopper/Documents/PlaydateSDK-3.0.2
 
 eval "$(starship init zsh)"
