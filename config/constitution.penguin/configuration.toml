@@ -41,7 +41,7 @@ brew = [
 	"btop",
 	"ruby",
 ]
-apt = [
+deb = [
 	"zsh",
 	"mangohud",
 	"sassc",
