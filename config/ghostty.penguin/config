@@ -1,5 +1,5 @@
 font-family = Martian Mono Condensed Semibold
-theme = Catppuccin Mocha
+theme = catppuccin-mocha
 
 background-opacity = 0.78
 
@@ -7,5 +7,3 @@ window-padding-x = 8,8
 window-padding-y = 8,8
 
 command = tmux
-
-bell-features = no-audio, attention
