@@ -40,7 +40,8 @@ brew = [
 	"tree",
 	"btop",
 	"ruby",
-	"rustup"
+	"rustup",
+	"wezterm/wezterm-linuxbrew/wezterm"
 ]
 deb = [
 	"zsh",
