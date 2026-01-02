@@ -3,6 +3,7 @@
 		{ "source": "config/ghostty.penguin",      "target": "~/.config/ghostty" },
 		{ "source": "config/MangoHud.penguin",     "target": "~/.config/MangoHud" },
 		{ "source": "config/nvim.penguin",         "target": "~/.config/nvim" },
-		{ "source": "config/constitution.penguin", "target": "~/.config/constitution" } 
+		{ "source": "config/constitution.penguin", "target": "~/.config/constitution" },
+		{ "source": "config/zsh.penguin",          "target": "~/.zshrc" }
 	]
 }
