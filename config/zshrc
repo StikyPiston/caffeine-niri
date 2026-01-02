@@ -45,9 +45,8 @@ export BAT_THEME="Catppuccin Mocha"
 export EDITOR="/home/distrorockhopper/.local/share/bob/nvim-bin/nvim"
 export PLAYDATE_SDK_PATH=/home/distrorockhopper/Documents/PlaydateSDK-3.0.2
 
-eval "$(starship init zsh)"
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(starship init zsh)"
 export HOMEBREW_NO_ENV_HINTS=1
 eval "$(fzf --zsh)"
 recall list
