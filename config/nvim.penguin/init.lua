@@ -224,6 +224,7 @@ require("cheaty").setup({
 		"- <leader>ow : Open NeoWiki",
 		"- <leader>oW : Open floating NeoWiki",
 		"- <leader>ms : Open Mindmap of current file",
+		"- <BS>       : Go back to previous file",
 		"",
 		"## Studytools",
 		"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
