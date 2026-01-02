@@ -40,6 +40,7 @@ brew = [
 	"tree",
 	"btop",
 	"ruby",
+	"rustup"
 ]
 deb = [
 	"zsh",
