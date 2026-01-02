@@ -40,7 +40,6 @@ brew = [
 	"tree",
 	"btop",
 	"ruby",
-	"rustup"
 ]
 deb = [
 	"zsh",
@@ -48,5 +47,6 @@ deb = [
 	"sassc",
 	"figlet",
 	"lolcat",
-	"tmux"
+	"tmux",
+	"rustup"
 ]
