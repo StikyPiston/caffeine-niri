@@ -49,5 +49,6 @@ deb = [
 	"sassc",
 	"figlet",
 	"lolcat",
-	"tmux"
+	"tmux",
+	"libfuse2"
 ]
