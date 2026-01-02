@@ -121,7 +121,8 @@ vim.pack.add({
 	"https://github.com/folke/snacks.nvim",
 	"https://github.com/chrisgrieser/nvim-origami",
 	"https://github.com/folke/which-key.nvim",
-	"https://github.com/jake-stewart/multicursor.nvim"
+	"https://github.com/jake-stewart/multicursor.nvim",
+	"https://github.com/stikypiston/simpledash.nvim"
 })
 
 -- Treesitter Setup
@@ -144,7 +145,6 @@ vim.api.nvim_set_hl(0, "SignColumn",  { bg = "#1e2030" })
 require("mason").setup()
 require("mini.icons").setup()
 require("mini.tabline").setup()
-require("mini.starter").setup()
 require("mini.notify").setup()
 require("oil").setup()
 require("render-markdown").setup()
@@ -261,6 +261,7 @@ require("which-key").setup({
 	}
 })
 require("multicursor-nvim").setup()
+require("simpledash").setup()
 
 -- Hijinks in LSP land
 
