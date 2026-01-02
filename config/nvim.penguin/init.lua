@@ -155,7 +155,7 @@ require('eagle').setup({
 })
 require("neowiki").setup({
 	wiki_dirs = {
-		{ name = "School", path = "~/Notebooks/School" }
+		{ name = "School", path = "~/SchoolNotes" }
 	}
 })
 require("lualine").setup({
