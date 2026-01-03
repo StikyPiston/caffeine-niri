@@ -261,7 +261,20 @@ require("which-key").setup({
 	}
 })
 require("multicursor-nvim").setup()
-require("alpha").setup(require("alpha.themes.dashboard").config)
+local alpha = require("alpha")
+local dash  = require("alpha.themes.dashboard")
+dash.section.header.val ={
+	"  _  _             _        ",
+	" | \\| |___ _____ _(_)_ __   ",
+	" | .` / -_) _ \\ V / | '  \\  ",
+	" |_|\\_\\___\\___/\\_/|_|_|_|_| "
+}
+dash.section.buttons.val = {
+	dash.button( "e", " New File",    ":ene<CR>" ),
+	dash.button( "f", " Find File",   ":Telescope find_files<CR>"),
+	dash.button( "q", "󰩈 Exit Neovim", ":qa<CR>" )
+}
+alpha.setup(dash.opts)
 
 -- Hijinks in LSP land
 
