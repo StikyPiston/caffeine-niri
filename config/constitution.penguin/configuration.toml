@@ -41,7 +41,8 @@ brew = [
 	"btop",
 	"ruby",
 	"rustup",
-	"wezterm/wezterm-linuxbrew/wezterm"
+	"wezterm/wezterm-linuxbrew/wezterm",
+	"bat",
 ]
 deb = [
 	"zsh",
