@@ -4,6 +4,10 @@
       "rev": "aee7c41a9a9473117465132768ae4b4da97435c3",
       "src": "https://github.com/NStefan002/2048.nvim"
     },
+    "alpha-nvim": {
+      "rev": "3979b01cb05734331c7873049001d3f2bb8477f4",
+      "src": "https://github.com/goolord/alpha-nvim"
+    },
     "autoclose.nvim": {
       "rev": "3f86702b54a861a17d7994b2e32a7c648cb12fb1",
       "src": "https://github.com/m4xshen/autoclose.nvim"

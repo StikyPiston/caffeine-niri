@@ -19,6 +19,8 @@ vim.g.mapleader      = " "
 vim.o.foldlevel      = 99
 vim.o.foldlevelstart = 99
 
+vim.loader.enable()
+
 -- Unbind things
 map({ "n", "v", "o" }, "<Up>",    noop)
 map({ "n", "v", "o" }, "<Down>",  noop)
@@ -44,11 +46,9 @@ map('i', '<A-o>',      '<C-x><C-o>', opts)
 map('n', 'tT',         ':Oil<CR>')
 map('n', 'fF',         function() require("telescope.builtin").find_files() end)
 map('n', 'fG',         function() require("telescope.builtin").live_grep() end)
-map('n', 'dD',         ':Dashboard<CR>')
 map('n', 'pP',         ':RenderMarkdown toggle<CR>')
 map('n', 'hH',         ':tabNext<CR>')
 map('n', 'hE',         ':tabnew<CR>')
-map('n', 'gO',         ':Obsidian')
 map('n', 'hK',         vim.cmd.split)
 map('n', 'hL',         vim.cmd.vsplit)
 map('n', '<C-Up>',     '<C-w>k')
@@ -122,7 +122,7 @@ vim.pack.add({
 	"https://github.com/chrisgrieser/nvim-origami",
 	"https://github.com/folke/which-key.nvim",
 	"https://github.com/jake-stewart/multicursor.nvim",
-	"https://github.com/stikypiston/simpledash.nvim"
+	"https://github.com/goolord/alpha-nvim"
 })
 
 -- Treesitter Setup
@@ -261,7 +261,7 @@ require("which-key").setup({
 	}
 })
 require("multicursor-nvim").setup()
-require("simpledash").setup()
+require("alpha").setup(require("alpha.themes.dashboard").config)
 
 -- Hijinks in LSP land
 
