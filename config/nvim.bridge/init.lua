@@ -107,7 +107,7 @@ require("lazy").setup({
 	  { "nvim-lua/plenary.nvim" },
 	  { "stevearc/oil.nvim" },
 	  { "nvim-mini/mini.nvim" },
-	  { "MeanderingProgrammer/render-markdown.nvim" },
+	  { "oxy2dev/markview.nvim" },
 	  { "folke/flash.nvim" },
 	  { "gisketch/triforce.nvim" },
 	  { "nvzone/volt" },
@@ -169,7 +169,6 @@ require("mini.icons").setup()
 require("mini.tabline").setup()
 require("mini.notify").setup()
 require("oil").setup()
-require("render-markdown").setup()
 require('ibl').setup()
 require('eagle').setup({
 	keyboard_mode = true,
