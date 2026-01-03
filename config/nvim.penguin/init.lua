@@ -129,7 +129,7 @@ require("lazy").setup({
 	  { "sqwxl/playdate.nvim" },
 	  { "Zeioth/markmap.nvim" },
 	  { "saghen/blink.cmp", build = "cargo build --release" },
-	  { "folke/lazydev.nvim" },
+	  { "folke/lazydev.nvim", ft = "lua" },
 	  { "piersolenski/skifree.nvim" },
 	  { "chentoast/marks.nvim" },
 	  { "stikypiston/cheaty.nvim" },
@@ -293,6 +293,7 @@ dash.section.header.val ={
 dash.section.buttons.val = {
 	dash.button( "e", " New File",    ":ene<CR>" ),
 	dash.button( "f", " Find File",   ":Telescope find_files<CR>"),
+	dash.button( "w", " Open Wiki",   ":lua require('neowiki').open_wiki()" ),
 	dash.button( "q", "󰩈 Exit Neovim", ":qa<CR>" )
 }
 alpha.setup(dash.opts)
