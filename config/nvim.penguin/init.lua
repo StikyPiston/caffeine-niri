@@ -293,7 +293,7 @@ dash.section.header.val ={
 dash.section.buttons.val = {
 	dash.button( "e", " New File",    ":ene<CR>" ),
 	dash.button( "f", " Find File",   ":Telescope find_files<CR>"),
-	dash.button( "w", " Open Wiki",   ":lua require('neowiki').open_wiki()" ),
+	dash.button( "w", " Open Wiki",   ":lua require('neowiki').open_wiki()<CR>" ),
 	dash.button( "q", "󰩈 Exit Neovim", ":qa<CR>" )
 }
 alpha.setup(dash.opts)
