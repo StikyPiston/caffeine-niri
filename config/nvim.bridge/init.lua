@@ -78,51 +78,73 @@ map('n', '<C-Down>',   function() require("multicursor-nvim").lineAddCursor(1) e
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 
 -- Packing it up in here :P
-vim.pack.add({
-	"https://github.com/catppuccin/nvim",
-	"https://github.com/nvim-treesitter/nvim-treesitter",
-	"https://github.com/neovim/nvim-lspconfig",
-	"https://github.com/mason-org/mason.nvim",
-	"https://github.com/nvim-tree/nvim-web-devicons",
-	"https://github.com/hrsh7th/nvim-cmp",
-	"https://github.com/nvim-lua/plenary.nvim",
-	"https://github.com/stevearc/oil.nvim",
-	"https://github.com/nvim-mini/mini.nvim",
-	"https://github.com/MeanderingProgrammer/render-markdown.nvim",
-	"https://github.com/folke/flash.nvim",
-	"https://github.com/gisketch/triforce.nvim",
-	"https://github.com/nvzone/volt",
-	"https://github.com/lukas-reineke/indent-blankline.nvim",
-	"https://github.com/MunifTanjim/nui.nvim",
-	"https://github.com/soulis-1256/eagle.nvim",
-	"https://github.com/stephansama/fzf-nerdfont.nvim",
-	"https://github.com/ibhagwan/fzf-lua",
-	"https://github.com/nvzone/typr",
-	"https://github.com/apple/pkl-neovim",
-	"https://github.com/charmbracelet/tree-sitter-vhs",
-	"https://github.com/echaya/neowiki.nvim",
-	"https://github.com/nvim-lualine/lualine.nvim",
-	"https://github.com/dstein64/vim-startuptime",
-	"https://github.com/brenoprata10/nvim-highlight-colors",
-	"https://github.com/kdheepak/lazygit.nvim",
-	"https://github.com/StikyPiston/coinflip.nvim",
-	"https://github.com/NStefan002/2048.nvim",
-	"https://github.com/sqwxl/playdate.nvim",
-	"https://github.com/Zeioth/markmap.nvim",
-	"https://github.com/saghen/blink.cmp",
-	"https://github.com/folke/lazydev.nvim",
-	"https://github.com/piersolenski/skifree.nvim",
-	"https://github.com/chentoast/marks.nvim",
-	"https://github.com/stikypiston/cheaty.nvim",
-	"https://github.com/lewis6991/gitsigns.nvim",
-	"https://github.com/m4xshen/autoclose.nvim",
-	"https://github.com/stikypiston/studytools.nvim",
-	"https://github.com/nvim-telescope/telescope.nvim",
-	"https://github.com/folke/snacks.nvim",
-	"https://github.com/chrisgrieser/nvim-origami",
-	"https://github.com/folke/which-key.nvim",
-	"https://github.com/jake-stewart/multicursor.nvim",
-	"https://github.com/goolord/alpha-nvim"
+
+-- > Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- > Setup lazy.nvim
+require("lazy").setup({
+  spec = {
+	  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	  { "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" },
+	  { "neovim/nvim-lspconfig" },
+	  { "mason-org/mason.nvim" },
+	  { "nvim-tree/nvim-web-devicons" },
+	  { "nvim-lua/plenary.nvim" },
+	  { "stevearc/oil.nvim" },
+	  { "nvim-mini/mini.nvim" },
+	  { "MeanderingProgrammer/render-markdown.nvim" },
+	  { "folke/flash.nvim" },
+	  { "gisketch/triforce.nvim" },
+	  { "nvzone/volt" },
+	  { "lukas-reineke/indent-blankline.nvim" },
+	  { "MunifTanjim/nui.nvim" },
+	  { "soulis-1256/eagle.nvim" },
+	  { "stephansama/fzf-nerdfont.nvim" },
+	  { "ibhagwan/fzf-lua" },
+	  { "nvzone/typr" },
+	  { "apple/pkl-neovim" },
+	  { "charmbracelet/tree-sitter-vhs" },
+	  { "echaya/neowiki.nvim" },
+	  { "nvim-lualine/lualine.nvim" },
+	  { "dstein64/vim-startuptime" },
+	  { "brenoprata10/nvim-highlight-colors" },
+	  { "kdheepak/lazygit.nvim" },
+	  { "stikypiston/coinflip.nvim" },
+	  { "NStefan002/2048.nvim" },
+	  { "sqwxl/playdate.nvim" },
+	  { "Zeioth/markmap.nvim" },
+	  { "saghen/blink.cmp", build = "cargo build --release" },
+	  { "folke/lazydev.nvim" },
+	  { "piersolenski/skifree.nvim" },
+	  { "chentoast/marks.nvim" },
+	  { "stikypiston/cheaty.nvim" },
+	  { "lewis6991/gitsigns.nvim" },
+	  { "m4xshen/autoclose.nvim" },
+	  { "stikypiston/studytools.nvim" },
+	  { "nvim-telescope/telescope.nvim" },
+	  { "folke/snacks.nvim" },
+	  { "chrisgrieser/nvim-origami" },
+	  { "folke/which-key.nvim" },
+	  { "jake-stewart/multicursor.nvim" },
+	  { "goolord/alpha-nvim" }
+  },
+  install = { colorscheme = { "catppuccin-mocha" } },
+  checker = { enabled = true },
 })
 
 -- Treesitter Setup
