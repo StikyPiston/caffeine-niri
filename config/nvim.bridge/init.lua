@@ -66,7 +66,6 @@ map('n', '<leader>w',  ':w<CR>')
 map('n', '<leader>q',  ':q<CR>')
 map('n', '<leader>so', ':so<CR>')
 map('n', '<leader>lf', vim.lsp.buf.format)
-map('n', '<leader>cf', function() require("coinflip").flip() end)
 map('n', '<leader>mo', ':MarkmapOpen')
 map('n', '<leader>ms', ':MarkmapSave')
 map('n', '<leader>r',  ':%s/')
@@ -76,6 +75,8 @@ map('n', '<leader>bb', ':StudytoolsBlurt<CR>')
 map('n', '<C-Up>',     function() require("multicursor-nvim").lineAddCursor(-1) end)
 map('n', '<C-Down>',   function() require("multicursor-nvim").lineAddCursor(1) end)
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
+map('n', '<leader>cs', ':Cheaty<CR>')
+map('n', '<leader>cf', ':Coinflip<CR>')
 
 -- Packing it up in here :P
 
@@ -137,7 +138,7 @@ spec = {
 	{ "dstein64/vim-startuptime", cmd = "StartupTime" },
 	{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
 	{ "kdheepak/lazygit.nvim", cmd = "LazyGit" },
-	{ "stikypiston/coinflip.nvim" },
+	{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
 	{ "sqwxl/playdate.nvim", opts = {
 			playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
 			build = {
@@ -165,7 +166,6 @@ spec = {
 	{ "chentoast/marks.nvim", event = "VeryLazy" },
 	{ "stikypiston/cheaty.nvim",
 		config = function() require("cheaty").setup({
-			keymap = "<leader>cs",
 			cheatsheet = {
 				"# Cheatsheet",
 				"",
@@ -205,7 +205,8 @@ spec = {
 				"- zf         : Create fold",
 				"- za         : Toggle fold under cursor"
 			}
-		}) end
+		}) end,
+		cmd = "Cheaty"
 	},
 	{ "lewis6991/gitsigns.nvim" },
 	{ "m4xshen/autoclose.nvim", config = function() require("autoclose").setup() end },
@@ -213,7 +214,9 @@ spec = {
 			require("studytools.inlineannotations").setup()
 			require("studytools.pomodoro").setup()
 			require("studytools.blurt").setup()
-		end
+		end,
+		ft  = "markdown",
+		cmd = { "StudytoolsPomodoro", "StudytoolsPomodoroStatus", "StudytoolsPomodoroStop", "StudytoolsBlurt" }
 	},
 	{ "nvim-telescope/telescope.nvim", cmd = "Telescope" },
 	{ "folke/snacks.nvim", opts = {
