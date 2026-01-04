@@ -215,7 +215,7 @@ spec = {
 			require("studytools.blurt").setup()
 		end
 	},
-	{ "nvim-telescope/telescope.nvim" },
+	{ "nvim-telescope/telescope.nvim", cmd = "Telescope" },
 	{ "folke/snacks.nvim", opts = {
 			image     = { enabled = true },
 			quickfile = { enabled = true }
