@@ -255,7 +255,7 @@ require("lazy").setup({
 		{ "goolord/alpha-nvim" },
 		{ "nvzone/minty", cmd = { "Shades", "Huefy" } },
 		{ "nvzone/floaterm", cmd = { "FloatermToggle" } },
-		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" } }
+		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
