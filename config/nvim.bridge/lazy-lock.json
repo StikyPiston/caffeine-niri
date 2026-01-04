@@ -1,5 +1,4 @@
 {
-  "2048.nvim": { "branch": "main", "commit": "aee7c41a9a9473117465132768ae4b4da97435c3" },
   "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },
   "autoclose.nvim": { "branch": "main", "commit": "3f86702b54a861a17d7994b2e32a7c648cb12fb1" },
   "blink.cmp": { "branch": "main", "commit": "6a4914ca987453464a7dfc7fc237a992adb567d0" },

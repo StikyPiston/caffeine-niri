@@ -122,7 +122,7 @@ spec = {
 			mouse_mode    = true
 		}
 	},
-	{ "stephansama/fzf-nerdfont.nvim" },
+	{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
 	{ "ibhagwan/fzf-lua" },
 	{ "nvzone/typr" },
 	{ "apple/pkl-neovim" },
@@ -134,9 +134,9 @@ spec = {
 		}
 	},
 	{ "nvim-lualine/lualine.nvim" },
-	{ "dstein64/vim-startuptime" },
+	{ "dstein64/vim-startuptime", cmd = "StartupTime" },
 	{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
-	{ "kdheepak/lazygit.nvim" },
+	{ "kdheepak/lazygit.nvim", cmd = "LazyGit" },
 	{ "stikypiston/coinflip.nvim" },
 	{ "sqwxl/playdate.nvim", opts = {
 			playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
@@ -144,7 +144,8 @@ spec = {
 				source_dir = "src",
 				output_dir = "build.pdx"
 			}
-		}
+		},
+		cmd = { "PlaydateBuild", "PlaydateBuildRun", "PlaydateRun", "PlaydateSetup" }
 	},
 	{ "Zeioth/markmap.nvim", opts = {
 			build = "yarn global add markmap-cli",
@@ -160,7 +161,7 @@ spec = {
 	},
 	{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end },
 	{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true },
-	{ "piersolenski/skifree.nvim" },
+	{ "piersolenski/skifree.nvim", cmd = "SkiFree" },
 	{ "chentoast/marks.nvim", event = "VeryLazy" },
 	{ "stikypiston/cheaty.nvim",
 		config = function() require("cheaty").setup({
