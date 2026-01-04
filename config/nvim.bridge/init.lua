@@ -238,7 +238,9 @@ require("lazy").setup({
 			}
 		},
 		{ "jake-stewart/multicursor.nvim", config = function() require("multicursor-nvim").setup() end },
-		{ "goolord/alpha-nvim" }
+		{ "goolord/alpha-nvim" },
+		{ "nvzone/minty", cmd = { "Shades", "Huefy" } },
+		{ "nvzone/floaterm", cmd = { "FloatermToggle" } }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
