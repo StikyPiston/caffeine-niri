@@ -55,7 +55,6 @@ map('n', '<C-Up>',     '<C-w>k')
 map('n', '<C-Down>',   '<C-w>j')
 map('n', '<C-Left>',   '<C-w>h')
 map('n', '<C-Right>',  '<C-w>l')
-map('n', '<C-s>',      function() require('flash').jump() end)
 map('n', '<C-i>',      ':FzfNerdfont<CR>')
 map('n', '<C-b>',      function() vim.pack.update() end)
 map('n', '<leader>ow', function() require("neowiki").open_wiki() end)
@@ -116,7 +115,10 @@ require("lazy").setup({
 			end
 		},
 		{ "oxy2dev/markview.nvim" },
-		{ "folke/flash.nvim" },
+		{ "folke/flash.nvim", opts = {}, event = "VeryLazy", keys = {
+				{ "<C-s>", mode = { "n", "x", "o", "v" }, function() require("flash").jump() end }
+			}
+		},
 		{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
 		{ "nvzone/volt" },
 		{ "lukas-reineke/indent-blankline.nvim", config = function() require("ibl").setup() end },
