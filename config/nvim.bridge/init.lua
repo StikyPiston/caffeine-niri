@@ -77,6 +77,9 @@ map('n', '<C-Down>',   function() require("multicursor-nvim").lineAddCursor(1) e
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 map('n', '<leader>cs', ':Cheaty<CR>')
 map('n', '<leader>cf', ':Coinflip<CR>')
+map('n', '<leader>ft', ':FloatermToggle<CR>')
+map('n', '<leader>hh', ':Huefy<CR>')
+map('n', '<leader>hs', ':Shades<CR>')
 
 -- Packing it up in here :P
 
@@ -203,7 +206,18 @@ require("lazy").setup({
 					"- zO         : Unfold all under cursor",
 					"- zr         : Unfold all one level",
 					"- zf         : Create fold",
-					"- za         : Toggle fold under cursor"
+					"- za         : Toggle fold under cursor",
+					"",
+					"## Floaterminal",
+					"- <leader>ft : Open floating terminal",
+					"- <C-h>      : Focus sidebar",
+					"- <C-l>      : Focus terminal",
+					"- <C-j>      : Next terminal",
+					"- <C-k>      : Previous terminal",
+					"",
+					"## Colour tools",
+					"- <leader>hh : Hue menu",
+					"- <leader>hs : Shades menu"
 				}
 			}) end,
 			cmd = "Cheaty"
