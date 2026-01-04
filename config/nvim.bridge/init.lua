@@ -99,149 +99,149 @@ vim.opt.rtp:prepend(lazypath)
 
 -- > Setup lazy.nvim
 require("lazy").setup({
-spec = {
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-	{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" },
-	{ "neovim/nvim-lspconfig" },
-	{ "mason-org/mason.nvim", config = function() require("mason").setup() end },
-	{ "nvim-tree/nvim-web-devicons" },
-	{ "stevearc/oil.nvim", config = function() require("oil").setup() end },
-	{ "nvim-mini/mini.nvim", config = function()
-			require("mini.icons").setup()
-			require("mini.tabline").setup()
-			require("mini.notify").setup()
-		end
-	},
-	{ "oxy2dev/markview.nvim" },
-	{ "folke/flash.nvim" },
-	{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
-	{ "nvzone/volt" },
-	{ "lukas-reineke/indent-blankline.nvim", config = function() require("ibl").setup() end },
-	{ "MunifTanjim/nui.nvim" },
-	{ "soulis-1256/eagle.nvim", opts = {
-			keyboard_mode = true,
-			mouse_mode    = true
-		}
-	},
-	{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
-	{ "ibhagwan/fzf-lua" },
-	{ "nvzone/typr" },
-	{ "apple/pkl-neovim" },
-	{ "charmbracelet/tree-sitter-vhs" },
-	{ "echaya/neowiki.nvim", opts = {
-			wiki_dirs = {
-				{ name = "School", path = "~/Notebooks/School" }
-			}
-		}
-	},
-	{ "nvim-lualine/lualine.nvim" },
-	{ "dstein64/vim-startuptime", cmd = "StartupTime" },
-	{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
-	{ "kdheepak/lazygit.nvim", cmd = "LazyGit" },
-	{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
-	{ "sqwxl/playdate.nvim", opts = {
-			playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
-			build = {
-				source_dir = "src",
-				output_dir = "build.pdx"
+	spec = {
+		{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+		{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" },
+		{ "neovim/nvim-lspconfig" },
+		{ "mason-org/mason.nvim", config = function() require("mason").setup() end },
+		{ "nvim-tree/nvim-web-devicons" },
+		{ "stevearc/oil.nvim", config = function() require("oil").setup() end },
+		{ "nvim-mini/mini.nvim", config = function()
+				require("mini.icons").setup()
+				require("mini.tabline").setup()
+				require("mini.notify").setup()
+			end
+		},
+		{ "oxy2dev/markview.nvim" },
+		{ "folke/flash.nvim" },
+		{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
+		{ "nvzone/volt" },
+		{ "lukas-reineke/indent-blankline.nvim", config = function() require("ibl").setup() end },
+		{ "MunifTanjim/nui.nvim" },
+		{ "soulis-1256/eagle.nvim", opts = {
+				keyboard_mode = true,
+				mouse_mode    = true
 			}
 		},
-		cmd = { "PlaydateBuild", "PlaydateBuildRun", "PlaydateRun", "PlaydateSetup" }
-	},
-	{ "Zeioth/markmap.nvim", opts = {
-			build = "yarn global add markmap-cli",
-			cmd   = { "MarkmapOpen", "MarkmapSave", "MarkmapWatch", "MarkmapWatchStop" },
-			opts  = {
-				html_output  = "/tmp/markmap.html",
-				hide_toolbar = false,
-				grace_period = 3600000
+		{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
+		{ "ibhagwan/fzf-lua" },
+		{ "nvzone/typr", cmd = { "Typr", "TyprStats" } },
+		{ "apple/pkl-neovim" },
+		{ "charmbracelet/tree-sitter-vhs" },
+		{ "echaya/neowiki.nvim", opts = {
+				wiki_dirs = {
+					{ name = "School", path = "~/Notebooks/School" }
+				}
+			}
+		},
+		{ "nvim-lualine/lualine.nvim" },
+		{ "dstein64/vim-startuptime", cmd = "StartupTime" },
+		{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
+		{ "kdheepak/lazygit.nvim", cmd = "LazyGit" },
+		{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
+		{ "sqwxl/playdate.nvim", opts = {
+				playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
+				build = {
+					source_dir = "src",
+					output_dir = "build.pdx"
+				}
 			},
-			lazy = true,
-			config = function(_, opts) require("markmap").setup(opts) end
-		}
-	},
-	{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end },
-	{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true },
-	{ "piersolenski/skifree.nvim", cmd = "SkiFree" },
-	{ "chentoast/marks.nvim", event = "VeryLazy" },
-	{ "stikypiston/cheaty.nvim",
-		config = function() require("cheaty").setup({
-			cheatsheet = {
-				"# Cheatsheet",
-				"",
-				"## Basics",
-				"- gq         : Wrap to 80-character long lines",
-				"- : [visual] : do the '<,'> thing",
-				"- g??        : ROT13 the current line for some reason",
-				"- <leader>r  : :%s/",
-				"- ~          : Toggle case of character under cursor",
-				"",
-				"## Marks",
-				"- m[letter]  : Create mark of that letter",
-				"- m,         : Create next available mark",
-				"- '[letter]  : Go to mark of that letter",
-				"- m<         : Go to previous mark",
-				"- m>         : Go to next mark",
-				"- m.         : Go to last-edited line",
-				"- :delmark x : Delete mark of that letter",
-				"",
-				"## NeoWiki",
-				"- <leader>ow : Open NeoWiki",
-				"- <leader>oW : Open floating NeoWiki",
-				"- <leader>ms : Open Mindmap of current file",
-				"- <BS>       : Go back to previous file",
-				"",
-				"## Studytools",
-				"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
-				"- <leader>sP : Pomodoro timer status",
-				"- <leader>bb : Start blurting buffer",
-				"",
-				"## Folding",
-				"- zc         : Fold",
-				"- zM         : Fold all",
-				"- zo         : Unfold",
-				"- zO         : Unfold all under cursor",
-				"- zr         : Unfold all one level",
-				"- zf         : Create fold",
-				"- za         : Toggle fold under cursor"
+			cmd = { "PlaydateBuild", "PlaydateBuildRun", "PlaydateRun", "PlaydateSetup" }
+		},
+		{ "Zeioth/markmap.nvim", opts = {
+				build = "yarn global add markmap-cli",
+				cmd   = { "MarkmapOpen", "MarkmapSave", "MarkmapWatch", "MarkmapWatchStop" },
+				opts  = {
+					html_output  = "/tmp/markmap.html",
+					hide_toolbar = false,
+					grace_period = 3600000
+				},
+				lazy = true,
+				config = function(_, opts) require("markmap").setup(opts) end
 			}
-		}) end,
-		cmd = "Cheaty"
-	},
-	{ "lewis6991/gitsigns.nvim" },
-	{ "m4xshen/autoclose.nvim", config = function() require("autoclose").setup() end },
-	{ "stikypiston/studytools.nvim", config = function()
-			require("studytools.inlineannotations").setup()
-			require("studytools.pomodoro").setup()
-			require("studytools.blurt").setup()
-		end,
-		ft  = "markdown",
-		cmd = { "StudytoolsPomodoro", "StudytoolsPomodoroStatus", "StudytoolsPomodoroStop", "StudytoolsBlurt" }
-	},
-	{ "nvim-telescope/telescope.nvim", cmd = "Telescope" },
-	{ "folke/snacks.nvim", opts = {
-			image     = { enabled = true },
-			quickfile = { enabled = true }
-		}
-	},
-	{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
-			autoFold = {
-				enabled = false
+		},
+		{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end },
+		{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true },
+		{ "piersolenski/skifree.nvim", cmd = "SkiFree" },
+		{ "chentoast/marks.nvim", event = "VeryLazy" },
+		{ "stikypiston/cheaty.nvim",
+			config = function() require("cheaty").setup({
+				cheatsheet = {
+					"# Cheatsheet",
+					"",
+					"## Basics",
+					"- gq         : Wrap to 80-character long lines",
+					"- : [visual] : do the '<,'> thing",
+					"- g??        : ROT13 the current line for some reason",
+					"- <leader>r  : :%s/",
+					"- ~          : Toggle case of character under cursor",
+					"",
+					"## Marks",
+					"- m[letter]  : Create mark of that letter",
+					"- m,         : Create next available mark",
+					"- '[letter]  : Go to mark of that letter",
+					"- m<         : Go to previous mark",
+					"- m>         : Go to next mark",
+					"- m.         : Go to last-edited line",
+					"- :delmark x : Delete mark of that letter",
+					"",
+					"## NeoWiki",
+					"- <leader>ow : Open NeoWiki",
+					"- <leader>oW : Open floating NeoWiki",
+					"- <leader>ms : Open Mindmap of current file",
+					"- <BS>       : Go back to previous file",
+					"",
+					"## Studytools",
+					"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
+					"- <leader>sP : Pomodoro timer status",
+					"- <leader>bb : Start blurting buffer",
+					"",
+					"## Folding",
+					"- zc         : Fold",
+					"- zM         : Fold all",
+					"- zo         : Unfold",
+					"- zO         : Unfold all under cursor",
+					"- zr         : Unfold all one level",
+					"- zf         : Create fold",
+					"- za         : Toggle fold under cursor"
+				}
+			}) end,
+			cmd = "Cheaty"
+		},
+		{ "lewis6991/gitsigns.nvim" },
+		{ "m4xshen/autoclose.nvim", config = function() require("autoclose").setup() end },
+		{ "stikypiston/studytools.nvim", config = function()
+				require("studytools.inlineannotations").setup()
+				require("studytools.pomodoro").setup()
+				require("studytools.blurt").setup()
+			end,
+			ft  = "markdown",
+			cmd = { "StudytoolsPomodoro", "StudytoolsPomodoroStatus", "StudytoolsPomodoroStop", "StudytoolsBlurt" }
+		},
+		{ "nvim-telescope/telescope.nvim", cmd = "Telescope" },
+		{ "folke/snacks.nvim", opts = {
+				image     = { enabled = true },
+				quickfile = { enabled = true }
 			}
-		}
-	},
-	{ "folke/which-key.nvim", event = "VeryLazy", opts = {
-			preset = "helix",
-			layout = {
-				align = "right"
+		},
+		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
+				autoFold = {
+					enabled = false
+				}
 			}
-		}
-	},
-	{ "jake-stewart/multicursor.nvim", config = function() require("multicursor-nvim").setup() end },
-	{ "goolord/alpha-nvim" }
-  },
-  install = { colorscheme = { "catppuccin-mocha" } },
-  checker = { enabled = true },
+		},
+		{ "folke/which-key.nvim", event = "VeryLazy", opts = {
+				preset = "helix",
+				layout = {
+					align = "right"
+				}
+			}
+		},
+		{ "jake-stewart/multicursor.nvim", config = function() require("multicursor-nvim").setup() end },
+		{ "goolord/alpha-nvim" }
+	  },
+	install = { colorscheme = { "catppuccin-mocha" } },
+	checker = { enabled = true },
 })
 
 -- Treesitter Setup
