@@ -122,7 +122,6 @@ require("lazy").setup({
 		{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
 		{ "nvzone/volt" },
 		{ "lukas-reineke/indent-blankline.nvim", config = function() require("ibl").setup() end },
-		{ "MunifTanjim/nui.nvim" },
 		{ "soulis-1256/eagle.nvim", opts = {
 				keyboard_mode = true,
 				mouse_mode    = true
