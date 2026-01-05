@@ -34,7 +34,7 @@ alias lg='lazygit'
 
 alias man='tldr'
 
-alias nvimupdate='nv -c "lua vim.pack.update()" -c "w" -c "qall"'
+alias sf='spf'
 
 bindkey " " magic-space
 
