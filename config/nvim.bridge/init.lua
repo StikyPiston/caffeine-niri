@@ -235,7 +235,8 @@ require("lazy").setup({
 		{ "nvim-telescope/telescope.nvim", cmd = "Telescope" },
 		{ "folke/snacks.nvim", opts = {
 				image     = { enabled = true },
-				quickfile = { enabled = true }
+				quickfile = { enabled = true },
+				scroll    = { enabled = true, animate = { duration = { step = 1, total = 10 } } },
 			}
 		},
 		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
