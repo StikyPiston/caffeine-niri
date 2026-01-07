@@ -242,7 +242,7 @@ require("lazy").setup({
 		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
 		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} },
 		{ "folke/trouble.nvim", opts = {}, cmd = "Trouble" },
-		{ "stikypiston/smudge.nvim", config = function() require("smudge").enable() end }
+		{ "stikypiston/smudge.nvim", opts = {} }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
