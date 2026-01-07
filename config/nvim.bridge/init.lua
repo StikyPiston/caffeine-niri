@@ -117,7 +117,6 @@ require("lazy").setup({
 		},
 		{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
 		{ "nvzone/volt" },
-		{ "lukas-reineke/indent-blankline.nvim", config = function() require("ibl").setup() end },
 		{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
 		{ "ibhagwan/fzf-lua" },
 		{ "nvzone/typr", cmd = { "Typr", "TyprStats" } },
@@ -220,7 +219,8 @@ require("lazy").setup({
 				quickfile = { enabled = true },
 				scroll    = { enabled = true, animate = { duration = { step = 1, total = 10 } } },
 				notifier  = { enabled = true },
-				lazygit   = { enabled = true }
+				lazygit   = { enabled = true },
+				indent    = { enabled = true },
 			}
 		},
 		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
