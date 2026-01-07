@@ -118,11 +118,6 @@ require("lazy").setup({
 		{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
 		{ "nvzone/volt" },
 		{ "lukas-reineke/indent-blankline.nvim", config = function() require("ibl").setup() end },
-		{ "soulis-1256/eagle.nvim", opts = {
-				keyboard_mode = true,
-				mouse_mode    = true
-			}
-		},
 		{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
 		{ "ibhagwan/fzf-lua" },
 		{ "nvzone/typr", cmd = { "Typr", "TyprStats" } },
