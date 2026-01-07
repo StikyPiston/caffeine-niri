@@ -60,7 +60,7 @@ map('n', '<C-b>',      function() vim.pack.update() end)
 map('n', '<leader>ow', function() require("neowiki").open_wiki() end)
 map('n', '<leader>oW', function() require("neowiki").open_wiki_floating() end)
 map('n', '<leader>tp', ':Triforce profile<CR>')
-map('n', '<leader>lg', ':LazyGit<CR>')
+map('n', '<leader>lg', function() Snacks.lazygit() end)
 map('n', '<leader>w',  ':w<CR>')
 map('n', '<leader>q',  ':q<CR>')
 map('n', '<leader>so', ':so<CR>')
@@ -139,7 +139,6 @@ require("lazy").setup({
 		{ "nvim-lualine/lualine.nvim" },
 		{ "dstein64/vim-startuptime", cmd = "StartupTime" },
 		{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
-		{ "kdheepak/lazygit.nvim", cmd = "LazyGit" },
 		{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
 		{ "sqwxl/playdate.nvim", opts = {
 				playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
@@ -237,6 +236,7 @@ require("lazy").setup({
 				quickfile = { enabled = true },
 				scroll    = { enabled = true, animate = { duration = { step = 1, total = 10 } } },
 				notifier  = { enabled = true },
+				lazygit   = { enabled = true }
 			}
 		},
 		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
