@@ -110,7 +110,6 @@ require("lazy").setup({
 		{ "stevearc/oil.nvim", config = function() require("oil").setup() end },
 		{ "nvim-mini/mini.nvim", config = function()
 				require("mini.icons").setup()
-				require("mini.tabline").setup()
 				require("mini.notify").setup()
 			end
 		},
@@ -256,7 +255,8 @@ require("lazy").setup({
 		{ "goolord/alpha-nvim" },
 		{ "nvzone/minty", cmd = { "Shades", "Huefy" } },
 		{ "nvzone/floaterm", cmd = { "FloatermToggle" } },
-		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} }
+		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
+		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
