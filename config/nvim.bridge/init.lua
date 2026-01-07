@@ -110,7 +110,7 @@ require("lazy").setup({
 				require("mini.icons").setup()
 			end
 		},
-		{ "oxy2dev/markview.nvim" },
+		{ "oxy2dev/markview.nvim", ft = { "markdown", "html", "latex", "typst", "yaml" } },
 		{ "folke/flash.nvim", opts = {}, event = "VeryLazy", keys = {
 				{ "<C-s>", mode = { "n", "x", "o", "v" }, function() require("flash").jump() end }
 			}
