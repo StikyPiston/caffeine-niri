@@ -71,8 +71,8 @@ map('n', '<leader>r',  ':%s/')
 map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
 map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
 map('n', '<leader>bb', ':StudytoolsBlurt<CR>')
-map('n', '<C-Up>',     function() require("multicursor-nvim").lineAddCursor(-1) end)
-map('n', '<C-Down>',   function() require("multicursor-nvim").lineAddCursor(1) end)
+map('n', '<A-Up>',     function() require("multicursor-nvim").lineAddCursor(-1) end)
+map('n', '<A-Down>',   function() require("multicursor-nvim").lineAddCursor(1) end)
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 map('n', '<leader>cs', ':Cheaty<CR>')
 map('n', '<leader>cf', ':Coinflip<CR>')
@@ -239,7 +239,8 @@ require("lazy").setup({
 		{ "jake-stewart/multicursor.nvim", config = function() require("multicursor-nvim").setup() end },
 		{ "goolord/alpha-nvim" },
 		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
-		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} }
+		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} },
+		{ "folke/trouble.nvim", opts = {}, cmd = "Trouble" }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
