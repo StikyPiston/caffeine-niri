@@ -79,6 +79,7 @@ map('n', '<leader>cf', ':Coinflip<CR>')
 map('n', '<leader>ft', ':FloatermToggle<CR>')
 map('n', '<leader>hh', ':Huefy<CR>')
 map('n', '<leader>hs', ':Shades<CR>')
+map('n', '<leader>lz', ':Lazy<CR>')
 
 -- Packing it up in here :P
 
