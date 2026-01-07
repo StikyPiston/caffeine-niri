@@ -126,8 +126,8 @@ require("lazy").setup({
 		{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
 		{ "ibhagwan/fzf-lua" },
 		{ "nvzone/typr", cmd = { "Typr", "TyprStats" } },
-		{ "apple/pkl-neovim" },
-		{ "charmbracelet/tree-sitter-vhs" },
+		{ "apple/pkl-neovim", ft = "pkl" },
+		{ "charmbracelet/tree-sitter-vhs", ft = "vhs" },
 		{ "echaya/neowiki.nvim", opts = {
 				wiki_dirs = {
 					{ name = "School", path = "~/Notebooks/School" }
@@ -145,7 +145,8 @@ require("lazy").setup({
 					output_dir = "build.pdx"
 				}
 			},
-			cmd = { "PlaydateBuild", "PlaydateBuildRun", "PlaydateRun", "PlaydateSetup" }
+			cmd = { "PlaydateBuild", "PlaydateBuildRun", "PlaydateRun", "PlaydateSetup" },
+			ft  = "lua"
 		},
 		{ "Zeioth/markmap.nvim", opts = {
 				build = "yarn global add markmap-cli",
@@ -155,12 +156,13 @@ require("lazy").setup({
 					hide_toolbar = false,
 					grace_period = 3600000
 				},
-				lazy = true,
-				config = function(_, opts) require("markmap").setup(opts) end
+				lazy   = true,
+				config = function(_, opts) require("markmap").setup(opts) end,
+				ft     = "markdown"
 			}
 		},
 		{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end, event = { "InsertEnter", "CmdlineEnter" } },
-		{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true },
+		{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true, cmd = "LazyDev" },
 		{ "piersolenski/skifree.nvim", cmd = "SkiFree" },
 		{ "chentoast/marks.nvim", event = "VeryLazy" },
 		{ "stikypiston/cheaty.nvim",
@@ -203,22 +205,11 @@ require("lazy").setup({
 					"- zr         : Unfold all one level",
 					"- zf         : Create fold",
 					"- za         : Toggle fold under cursor",
-					"",
-					"## Floaterminal",
-					"- <leader>ft : Open floating terminal",
-					"- <C-h>      : Focus sidebar",
-					"- <C-l>      : Focus terminal",
-					"- <C-j>      : Next terminal",
-					"- <C-k>      : Previous terminal",
-					"",
-					"## Colour tools",
-					"- <leader>hh : Hue menu",
-					"- <leader>hs : Shades menu"
 				}
 			}) end,
 			cmd = "Cheaty"
 		},
-		{ "lewis6991/gitsigns.nvim" },
+		{ "lewis6991/gitsigns.nvim", event = "BufReadPre" },
 		{ "m4xshen/autoclose.nvim", config = function() require("autoclose").setup() end },
 		{ "stikypiston/studytools.nvim", config = function()
 				require("studytools.inlineannotations").setup()
