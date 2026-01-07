@@ -136,7 +136,7 @@ require("lazy").setup({
 				}
 			}
 		},
-		{ "nvim-lualine/lualine.nvim" },
+		{ "nvim-lualine/lualine.nvim", event = "VeryLazy" },
 		{ "dstein64/vim-startuptime", cmd = "StartupTime" },
 		{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
 		{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
@@ -161,7 +161,7 @@ require("lazy").setup({
 				config = function(_, opts) require("markmap").setup(opts) end
 			}
 		},
-		{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end },
+		{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end, event = { "InsertEnter", "CmdlineEnter" } },
 		{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true },
 		{ "piersolenski/skifree.nvim", cmd = "SkiFree" },
 		{ "chentoast/marks.nvim", event = "VeryLazy" },
