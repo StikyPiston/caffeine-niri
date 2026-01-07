@@ -77,6 +77,7 @@ map('n', ',',          function() require("multicursor-nvim").clearCursors() end
 map('n', '<leader>cs', ':Cheaty<CR>')
 map('n', '<leader>cf', ':Coinflip<CR>')
 map('n', '<leader>lz', ':Lazy<CR>')
+map('n', '<leader>ld', ':Trouble diagnostics')
 
 -- Packing it up in here :P
 
