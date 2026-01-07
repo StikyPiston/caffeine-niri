@@ -302,6 +302,8 @@ dash.section.buttons.val = {
 }
 alpha.setup(dash.opts)
 
+
+-- Autocmds
 local progress = vim.defaulttable()
 vim.api.nvim_create_autocmd("LspProgress", {
   callback = function(ev)
@@ -341,6 +343,14 @@ vim.api.nvim_create_autocmd("LspProgress", {
           or spinner[math.floor(vim.uv.hrtime() / (1e6 * 80)) % #spinner + 1]
       end,
     })
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true
   end,
 })
 
