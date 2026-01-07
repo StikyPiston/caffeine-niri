@@ -76,9 +76,6 @@ map('n', '<C-Down>',   function() require("multicursor-nvim").lineAddCursor(1) e
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 map('n', '<leader>cs', ':Cheaty<CR>')
 map('n', '<leader>cf', ':Coinflip<CR>')
-map('n', '<leader>ft', ':FloatermToggle<CR>')
-map('n', '<leader>hh', ':Huefy<CR>')
-map('n', '<leader>hs', ':Shades<CR>')
 map('n', '<leader>lz', ':Lazy<CR>')
 
 -- Packing it up in here :P
@@ -255,8 +252,6 @@ require("lazy").setup({
 		},
 		{ "jake-stewart/multicursor.nvim", config = function() require("multicursor-nvim").setup() end },
 		{ "goolord/alpha-nvim" },
-		{ "nvzone/minty", cmd = { "Shades", "Huefy" } },
-		{ "nvzone/floaterm", cmd = { "FloatermToggle" } },
 		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
 		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} }
 	  },
