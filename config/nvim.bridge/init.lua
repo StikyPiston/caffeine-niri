@@ -367,6 +367,14 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Hijinks in LSP land
+local function enableLSP(ft, server)
+	vim.api.nvim_create_autocmd("FileType", {
+		pattern = ft,
+		callback = function()
+			vim.lsp.enable(server)
+		end,
+	})
+end
 
 -- > Lua language server
 vim.lsp.config("lua_ls", {
@@ -383,7 +391,7 @@ vim.lsp.config("lua_ls", {
 		'.git',
 	},
 })
-vim.lsp.enable("lua_ls")
+enableLSP("lua_ls")
 
 -- > Ruby LSP
 vim.lsp.config("ruby-lsp", {
@@ -396,7 +404,7 @@ vim.lsp.config("ruby-lsp", {
 		return client.config.cmd_cwd == config.cmd_cwd
 	end,
 })
-vim.lsp.enable("ruby-lsp")
+enableLSP("ruby-lsp")
 
 -- > Crystal LSP
 vim.lsp.config("crystalline", {
@@ -404,7 +412,7 @@ vim.lsp.config("crystalline", {
 	filetypes    = { 'crystal' },
 	root_markers = { 'shard.yml', '.git' }
 })
-vim.lsp.enable("crystalline")
+enableLSP("crystalline")
 
 -- > Hyprlang LSP
 vim.lsp.config('hyprls', {
@@ -412,7 +420,7 @@ vim.lsp.config('hyprls', {
 	filetypes    = { 'hyprlang' },
 	root_markers = { '.git' }
 })
-vim.lsp.enable("hyprls")
+enableLSP("hyprls")
 
 -- > Fish LSP
 vim.lsp.config("fish-lsp", {
@@ -420,7 +428,7 @@ vim.lsp.config("fish-lsp", {
 	filetypes    = { 'fish' },
 	root_markers = { 'config.fish', '.git' },
 })
-vim.lsp.enable("fish-lsp")
+enableLSP("fish-lsp")
 
 -- > CoffeeScript LSP
 vim.lsp.config("coffeesense", {
@@ -428,28 +436,28 @@ vim.lsp.config("coffeesense", {
 	filetypes    = { 'coffee' },
 	root_markers = { 'package.json' },
 })
-vim.lsp.enable("coffeesense")
+enableLSP("coffeesense")
 
 -- > Rust LSP
-vim.lsp.enable("rust_analyzer")
+enableLSP("rust_analyzer")
 
 -- > Zig LSP
-vim.lsp.enable("zls")
+enableLSP("zls")
 
 -- > MCFunction LSP
-vim.lsp.enable("spyglassmc_language_server")
+enableLSP("spyglassmc_language_server")
 
 -- > Typst LSP
-vim.lsp.enable("tinymist")
+enableLSP("tinymist")
 
 -- > Python LSP
-vim.lsp.enable("pyright")
+enableLSP("pyright")
 
 -- > Swift LSP
-vim.lsp.enable("sourcekit")
+enableLSP("sourcekit")
 
 -- > Go LSP
-vim.lsp.enable("gopls")
+enableLSP("gopls")
 
 -- Inline diagnostics
 vim.diagnostic.config({
