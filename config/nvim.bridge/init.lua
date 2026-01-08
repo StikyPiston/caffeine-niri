@@ -78,6 +78,7 @@ map('n', '<leader>cs', ':Cheaty<CR>')
 map('n', '<leader>cf', ':Coinflip<CR>')
 map('n', '<leader>lz', ':Lazy<CR>')
 map('n', '<leader>ld', ':Trouble diagnostics')
+map('n', '<leader>ot', function() Snacks.terminal.open() end)
 
 -- Packing it up in here :P
 
@@ -200,6 +201,12 @@ require("lazy").setup({
 					"- zr         : Unfold all one level",
 					"- zf         : Create fold",
 					"- za         : Toggle fold under cursor",
+					"",
+					"## LSP",
+					"- <leader>ld : Trouble diagnostics",
+					"",
+					"## Terminal",
+					"- <leader>ot : Open terminal split"
 				}
 			}) end,
 			cmd = "Cheaty"
@@ -222,6 +229,7 @@ require("lazy").setup({
 				notifier  = { enabled = true },
 				lazygit   = { enabled = true },
 				indent    = { enabled = true },
+				terminal  = { enabled = true },
 			}
 		},
 		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
