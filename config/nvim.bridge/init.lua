@@ -378,8 +378,12 @@ local function enableLSP(ft, server)
 	vim.api.nvim_create_autocmd("FileType", {
 		pattern = ft,
 		callback = function()
-			vim.lsp.enable(server)
-		end,
+			vim.schedule(function()
+				if vim.lsp.config[server] then
+					vim.lsp.enable(server)
+				end
+			end)
+		end
 	})
 end
 
