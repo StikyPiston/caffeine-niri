@@ -391,7 +391,7 @@ vim.lsp.config("lua_ls", {
 		'.git',
 	},
 })
-enableLSP("lua_ls")
+enableLSP("lua", "lua_ls")
 
 -- > Ruby LSP
 vim.lsp.config("ruby-lsp", {
@@ -404,7 +404,7 @@ vim.lsp.config("ruby-lsp", {
 		return client.config.cmd_cwd == config.cmd_cwd
 	end,
 })
-enableLSP("ruby-lsp")
+enableLSP("ruby", "ruby-lsp")
 
 -- > Crystal LSP
 vim.lsp.config("crystalline", {
@@ -412,7 +412,7 @@ vim.lsp.config("crystalline", {
 	filetypes    = { 'crystal' },
 	root_markers = { 'shard.yml', '.git' }
 })
-enableLSP("crystalline")
+enableLSP("crystal", "crystalline")
 
 -- > Hyprlang LSP
 vim.lsp.config('hyprls', {
@@ -420,7 +420,7 @@ vim.lsp.config('hyprls', {
 	filetypes    = { 'hyprlang' },
 	root_markers = { '.git' }
 })
-enableLSP("hyprls")
+enableLSP("hyprlang", "hyprls")
 
 -- > Fish LSP
 vim.lsp.config("fish-lsp", {
@@ -428,7 +428,7 @@ vim.lsp.config("fish-lsp", {
 	filetypes    = { 'fish' },
 	root_markers = { 'config.fish', '.git' },
 })
-enableLSP("fish-lsp")
+enableLSP("fish", "fish-lsp")
 
 -- > CoffeeScript LSP
 vim.lsp.config("coffeesense", {
@@ -436,28 +436,31 @@ vim.lsp.config("coffeesense", {
 	filetypes    = { 'coffee' },
 	root_markers = { 'package.json' },
 })
-enableLSP("coffeesense")
+enableLSP("coffeescript", "coffeesense")
 
 -- > Rust LSP
-enableLSP("rust_analyzer")
+enableLSP("rust", "rust_analyzer")
 
 -- > Zig LSP
-enableLSP("zls")
+enableLSP("zig", "zls")
 
 -- > MCFunction LSP
-enableLSP("spyglassmc_language_server")
+enableLSP("mcfunction", "spyglassmc_language_server")
 
 -- > Typst LSP
-enableLSP("tinymist")
+enableLSP("typst", "tinymist")
 
 -- > Python LSP
-enableLSP("pyright")
+enableLSP("python", "pyright")
 
 -- > Swift LSP
-enableLSP("sourcekit")
+enableLSP("swift", "sourcekit")
 
 -- > Go LSP
-enableLSP("gopls")
+enableLSP("go", "gopls")
+
+-- > Markdown LSP
+enableLSP("markdown", "marksman")
 
 -- Inline diagnostics
 vim.diagnostic.config({
