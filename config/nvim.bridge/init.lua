@@ -267,7 +267,8 @@ require("lazy").setup({
 				messages  = { enabled = false },
 				popupmenu = { enabled = false },
 			}
-		}
+		},
+		{ "l3mon4d3/luasnip", dependencies = { "rafamadriz/friendly-snippets" } }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
