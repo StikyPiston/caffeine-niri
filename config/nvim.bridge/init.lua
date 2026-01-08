@@ -387,6 +387,14 @@ local function enableLSP(ft, server)
 	})
 end
 
+vim.api.nvim_create_user_command(
+	"MasonBootstrap",
+	function()
+		vim.cmd("MasonInstall bash-language-server coffeesense-language-server crystalline fish-lsp gopls hyprls kdlfmt lua-language-server marksman pyright ruby-lsp spyglassmc-language-server tinymist zls")
+	end,
+	{}
+)
+
 -- > Lua language server
 vim.lsp.config("lua_ls", {
 	cmd = { '/usr/sbin/lua-language-server' },
