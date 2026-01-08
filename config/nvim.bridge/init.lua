@@ -80,6 +80,7 @@ map('n', '<leader>cf', ':Coinflip<CR>')
 map('n', '<leader>lz', ':Lazy<CR>')
 map('n', '<leader>ld', ':Trouble diagnostics<CR>')
 map('n', '<leader>ot', function() Snacks.terminal.open() end)
+map('n', '<leader>os', function() Snacks.scratch() end)
 
 -- Packing it up in here :P
 
@@ -238,6 +239,7 @@ require("lazy").setup({
 				lazygit   = { enabled = true },
 				indent    = { enabled = true },
 				terminal  = { enabled = true },
+				scratch   = { enabled = true },
 			}
 		},
 		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
