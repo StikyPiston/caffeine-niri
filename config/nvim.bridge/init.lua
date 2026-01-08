@@ -259,7 +259,13 @@ require("lazy").setup({
 		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} },
 		{ "folke/trouble.nvim", opts = {}, cmd = "Trouble" },
 		{ "stikypiston/smudge.nvim", opts = { length = 6 } },
-		{ "folke/noice.nvim", opts = { notify = { enabled = false }, lsp = { enabled = false } } }
+		{ "folke/noice.nvim", opts = {
+				notify = { enabled = false },
+				lsp    = { progress = { enabled = false }, hover = { enabled = false }, signature = { enabled = false }, message = { enabled = false } },
+				messages = { enabled = false },
+				popupmenu = { enabled = false },
+			}
+		}
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
