@@ -157,7 +157,7 @@ require("lazy").setup({
 			}
 		},
 		{ "saghen/blink.cmp", build = "cargo build --release", config = function() require("blink.cmp").setup() end, event = { "InsertEnter", "CmdlineEnter" } },
-		{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true, cmd = "LazyDev" },
+		{ "folke/lazydev.nvim", ft = "lua", opts = {}, enabled = true },
 		{ "piersolenski/skifree.nvim", cmd = "SkiFree" },
 		{ "chentoast/marks.nvim", event = "VeryLazy" },
 		{ "stikypiston/cheaty.nvim",
