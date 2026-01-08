@@ -462,6 +462,9 @@ enableLSP("go", "gopls")
 -- > Markdown LSP
 enableLSP("markdown", "marksman")
 
+-- > Bash LSP
+enableLSP("bash", "bash-language-server")
+
 -- Inline diagnostics
 vim.diagnostic.config({
 	virtual_text = true
