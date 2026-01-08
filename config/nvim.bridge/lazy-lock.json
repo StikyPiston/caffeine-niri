@@ -20,6 +20,8 @@
   "mini.nvim": { "branch": "main", "commit": "fb4ccfed03c1f0d9db702f93a65cb4c0c6c2832b" },
   "multicursor.nvim": { "branch": "main", "commit": "c982cc8375f062e9f98e96a408e0f7ad0c80d4db" },
   "neowiki.nvim": { "branch": "main", "commit": "86f705604f9f2e6c1a0f238ebe8df9fb843e71c7" },
+  "noice.nvim": { "branch": "main", "commit": "7bfd942445fb63089b59f97ca487d605e715f155" },
+  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
   "nvim-highlight-colors": { "branch": "main", "commit": "e0c4a58ec8c3ca7c92d3ee4eb3bc1dd0f7be317e" },
   "nvim-lspconfig": { "branch": "master", "commit": "5a82e10b2df0ed31bec642c1c0344baee7c458b6" },
   "nvim-origami": { "branch": "main", "commit": "c660a3d7e3db602faa5fb6b5ff19ba7a1d9e71fe" },

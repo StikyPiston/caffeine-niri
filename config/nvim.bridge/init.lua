@@ -78,7 +78,7 @@ map('n', ',',          function() require("multicursor-nvim").clearCursors() end
 map('n', '<leader>cs', ':Cheaty<CR>')
 map('n', '<leader>cf', ':Coinflip<CR>')
 map('n', '<leader>lz', ':Lazy<CR>')
-map('n', '<leader>ld', ':Trouble diagnostics')
+map('n', '<leader>ld', ':Trouble diagnostics<CR>')
 map('n', '<leader>ot', function() Snacks.terminal.open() end)
 
 -- Packing it up in here :P
@@ -258,7 +258,8 @@ require("lazy").setup({
 		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
 		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} },
 		{ "folke/trouble.nvim", opts = {}, cmd = "Trouble" },
-		{ "stikypiston/smudge.nvim", opts = { length = 6 } }
+		{ "stikypiston/smudge.nvim", opts = { length = 6 } },
+		{ "folke/noice.nvim", opts = { notify = { enabled = false }, lsp = { enabled = false } } }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
