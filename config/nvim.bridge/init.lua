@@ -103,7 +103,14 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	spec = {
 		{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-		{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" },
+		{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate", config = function()
+			require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'latex', 'yaml', 'typst', 'zsh' })
+			vim.api.nvim_create_autocmd('FileType', {
+				pattern = { '<filetype>' },
+				callback = function() vim.treesitter.start() end
+			})
+			vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+		end },
 		{ "neovim/nvim-lspconfig" },
 		{ "mason-org/mason.nvim", config = function() require("mason").setup() end },
 		{ "nvim-tree/nvim-web-devicons" },
@@ -255,14 +262,6 @@ require("lazy").setup({
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
 })
-
--- Treesitter Setup
-require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'latex', 'yaml', 'typst', 'zsh' })
-vim.api.nvim_create_autocmd('FileType', {
-	pattern = { '<filetype>' },
-	callback = function() vim.treesitter.start() end
-})
-vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 
 -- Theming
 vim.cmd.colorscheme "catppuccin-mocha"
