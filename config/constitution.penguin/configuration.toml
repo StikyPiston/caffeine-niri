@@ -43,6 +43,9 @@ brew = [
 	"rustup",
 	"wezterm/wezterm-linuxbrew/wezterm",
 	"bat",
+	"superfile",
+	"npm",
+	"fastfetch"
 ]
 deb = [
 	"zsh",
