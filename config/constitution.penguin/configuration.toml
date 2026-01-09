@@ -44,7 +44,8 @@ brew = [
 	"wezterm/wezterm-linuxbrew/wezterm",
 	"bat",
 	"superfile",
-	"npm"
+	"npm",
+	"fastfetch"
 ]
 deb = [
 	"zsh",
