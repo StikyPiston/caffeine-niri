@@ -143,16 +143,6 @@ require("lazy").setup({
 		{ "dstein64/vim-startuptime", cmd = "StartupTime" },
 		{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
 		{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
-		{ "sqwxl/playdate.nvim", opts = {
-				playdate_sdk_path = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2",
-				build = {
-					source_dir = "src",
-					output_dir = "build.pdx"
-				}
-			},
-			cmd = { "PlaydateBuild", "PlaydateBuildRun", "PlaydateRun", "PlaydateSetup" },
-			ft  = "lua"
-		},
 		{ "Zeioth/markmap.nvim", opts = {
 				build = "yarn global add markmap-cli",
 				cmd   = { "MarkmapOpen", "MarkmapSave", "MarkmapWatch", "MarkmapWatchStop" },
