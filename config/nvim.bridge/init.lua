@@ -230,6 +230,39 @@ require("lazy").setup({
 				indent    = { enabled = true },
 				terminal  = { enabled = true },
 				scratch   = { enabled = true },
+				dashboard = { enabled = true,
+					sections = {
+						{ section = "header" },
+						{
+							gap     = 1,
+							padding = 1,
+							indent  = 2,
+							icon    = "󰥔",
+							title   = "Recent Files",
+							section = "recent_files",
+						},
+						{
+							pane    = 2,
+							gap     = 1,
+							padding = 1,
+							{ icon = "", key = "e", desc = "New File",    action = ":ene" },
+							{ icon = "", key = "f", desc = "Find File",   action = ":Telescope find_files" },
+							{ icon = "", key = "w", desc = "Open Wiki",   action = ":lua require('neowiki').open_wiki()" },
+							{ icon = "󰏗", key = "p", desc = "Plugins",     action = ":Lazy" },
+							{ icon = "󰩈", key = "q", desc = "Quit Neovim", action = ":qa" },
+						},
+						{
+							pane    = 2,
+							gap     = 1,
+							padding = 1,
+							icon    = "",
+							title   = "GitHub Status",
+							section = "terminal",
+							cmd     = "gh status",
+						},
+						{ section = "startup" },
+					}
+				},
 			}
 		},
 		{ "chrisgrieser/nvim-origami", event = "VeryLazy", opts = {
@@ -246,7 +279,6 @@ require("lazy").setup({
 			}
 		},
 		{ "jake-stewart/multicursor.nvim", config = function() require("multicursor-nvim").setup() end },
-		{ "goolord/alpha-nvim" },
 		{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
 		{ "romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {} },
 		{ "folke/trouble.nvim", opts = {}, cmd = "Trouble" },
@@ -297,22 +329,6 @@ require("marks").setup({
 
 	builtin_marks = { "." }
 })
-local alpha = require("alpha")
-local dash  = require("alpha.themes.dashboard")
-dash.section.header.val ={
-	"  _  _             _        ",
-	" | \\| |___ _____ _(_)_ __   ",
-	" | .` / -_) _ \\ V / | '  \\  ",
-	" |_|\\_\\___\\___/\\_/|_|_|_|_| "
-}
-dash.section.buttons.val = {
-	dash.button( "e", " New File",    ":ene<CR>" ),
-	dash.button( "f", " Find File",   ":Telescope find_files<CR>"),
-	dash.button( "w", " Open Wiki",   ":lua require('neowiki').open_wiki()<CR>" ),
-	dash.button( "q", "󰩈 Exit Neovim", ":qa<CR>" )
-}
-alpha.setup(dash.opts)
-
 
 -- Autocmds
 local progress = vim.defaulttable()
