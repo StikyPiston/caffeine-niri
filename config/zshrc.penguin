@@ -54,6 +54,9 @@ fastcards amount
 hocusfocus currentsession
 printf "󰆈  %s\n" "$(shuf -n 1 ~/.scripts/motds.txt)"
 
+autoload -Uz compinit
+compinit
+
 export FZF_DEFAULT_OPTS=" \
 		--tmux \
 		--preview 'bat --color=always {}' \
