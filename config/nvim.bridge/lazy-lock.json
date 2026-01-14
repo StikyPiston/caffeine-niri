@@ -28,7 +28,7 @@
   "nvim-origami": { "branch": "main", "commit": "c660a3d7e3db602faa5fb6b5ff19ba7a1d9e71fe" },
   "nvim-treesitter": { "branch": "main", "commit": "5a7e5638e7d220575b1c22c8a2e099b52231886e" },
   "nvim-web-devicons": { "branch": "master", "commit": "803353450c374192393f5387b6a0176d0972b848" },
-  "oil.nvim": { "branch": "master", "commit": "fbbb2a98721da86f46b06994fd3b4833b04c6e9b" },
+  "oil.nvim": { "branch": "master", "commit": "6b59a6cf623fa2245c7454ddb458df5bdb6615d3" },
   "pkl-neovim": { "branch": "main", "commit": "e5e4a736ad141e5a1e2f3507c70e0593dd7c4f5f" },
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
   "skifree.nvim": { "branch": "main", "commit": "565ba7d5dfa29a67027434906c40f5bb06d0b8ae" },
