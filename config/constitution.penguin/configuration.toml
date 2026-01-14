@@ -45,7 +45,8 @@ brew = [
 	"bat",
 	"superfile",
 	"npm",
-	"fastfetch"
+	"fastfetch",
+	"ytsurf"
 ]
 deb = [
 	"zsh",
