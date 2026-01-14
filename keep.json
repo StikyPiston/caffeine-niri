@@ -26,6 +26,7 @@
 		{ "source": "config/zathura",              "target": "~/.config/zathura" },
 		{ "source": "config/wallpaper.jpg",        "target": "~/.wallpaper" },
 		{ "source": "config/pricetag",             "target": "~/.config/pricetag" },
-		{ "source": "config/helix",                "target": "~/.config/helix" }
+		{ "source": "config/helix",                "target": "~/.config/helix" },
+		{ "source": "config/zellij",               "target": "~/.config/zellij" }
 	]
 }
