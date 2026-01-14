@@ -1,4 +1,4 @@
-name: apt
+name: deb
 
 commands:
   install:     "sudo apt install -y {{package}}"
