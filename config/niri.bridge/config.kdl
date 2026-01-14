@@ -79,6 +79,7 @@ spawn-at-startup "alertify"
 spawn-at-startup "systemctl" "--user" "start" "hyprpolkitagent"
 spawn-at-startup "mpd"
 spawn-at-startup "indicator-stickynotes"
+spawn-at-startup "vicinae" "server" "--open"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
@@ -250,7 +251,7 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 
-    Mod+Grave { spawn "fuzzel"; }
+    Mod+Grave { spawn "vicinae" "toggle"; }
 	Mod+Return { spawn "ghostty"; }
 	Mod+Shift+Grave { spawn "wlogout" "-b" "4"; }
 	Mod+Semicolon { spawn "flatpak " "run " "app.zen_browser.zen"; }
