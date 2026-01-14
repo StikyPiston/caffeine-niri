@@ -1,0 +1,6 @@
+name: apt
+
+commands:
+  install:     "sudo apt install -y {{package}}"
+  remove:      "sudo apt remove -y {{package}}"
+  upgrade_all: "sudo apt update; sudo apt upgrade -y"

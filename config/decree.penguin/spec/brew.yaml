@@ -1,0 +1,6 @@
+name: brew
+
+commands:
+  install:     "brew install {{package}}"
+  remove:      "brew remove {{package}}"
+  upgrade_all: "brew update; brew upgrade"
