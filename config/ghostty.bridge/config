@@ -7,6 +7,6 @@ window-padding-x = 8,8
 window-padding-y = 8,8
 
 
-command = tmux
+command = tmux -c "nu"
 
 bell-features = no-audio, attention
