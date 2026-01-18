@@ -4,7 +4,6 @@ source zoxide.nu
 
 $env.config.show_banner = false
 
-alias ls = ls | sort-by type name
 alias l  = eza --icons=always --group-directories-first
 alias la = l -a
 alias ll = l -a1
