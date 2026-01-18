@@ -30,14 +30,14 @@ alias lg  = lazygit
 alias man = tldr
 alias sf  = spf
 
-$env.PATH = ( $env.PATH | append '$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin' )
-$env.PATH = ( $env.PATH | append '$env.HOME/.local/share/bob/nvim-bin' )
-$env.PATH = ( $env.PATH | append '$env.HOME/Documents/PlaydateSDK-3.0.2/bin' )
-$env.PATH = ( $env.PATH | append '$env.HOME/Applications' )
-$env.PATH = ( $env.PATH | append '$env.HOME/.scripts' )
-$env.PATH = ( $env.PATH | append '$env.HOME/.cargo/bin' )
-$env.PATH = ( $env.PATH | append '$env.HOME/.local/share/gem/ruby/3.4.0/bin' )
-$env.PATH = ( $env.PATH | append '$env.HOME/.local/bin' )
+$env.PATH = ( $env.PATH | append "$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
+$env.PATH = ( $env.PATH | append "$env.HOME/.local/share/bob/nvim-bin" )
+$env.PATH = ( $env.PATH | append "$env.HOME/Documents/PlaydateSDK-3.0.2/bin" )
+$env.PATH = ( $env.PATH | append "$env.HOME/Applications" )
+$env.PATH = ( $env.PATH | append "$env.HOME/.scripts" )
+$env.PATH = ( $env.PATH | append "$env.HOME/.cargo/bin" )
+$env.PATH = ( $env.PATH | append "$env.HOME/.local/share/gem/ruby/3.4.0/bin" )
+$env.PATH = ( $env.PATH | append "$env.HOME/.local/bin" )
 
 $env.BAT_THEME         = "Catppuccin Mocha"
 $env.EDITOR            = "$env.HOME/.local/share/bob/nvim-bin/nvim"
