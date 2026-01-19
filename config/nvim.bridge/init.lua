@@ -19,6 +19,7 @@ vim.g.mapleader      = " "
 vim.o.foldlevel      = 99
 vim.o.foldlevelstart = 99
 vim.o.scrolloff      = 999
+vim.o.cursorline     = true
 
 vim.loader.enable()
 
