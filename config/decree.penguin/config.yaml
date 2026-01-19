@@ -51,6 +51,7 @@ packages:
     - "fastfetch"
     - "ytsurf"
     - "stikypiston/formulae/termfarm"
+    - "nushell"
   deb:
     - "zsh"
     - "mangohud"
