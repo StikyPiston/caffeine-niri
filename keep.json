@@ -31,6 +31,7 @@
 		{ "source": "config/nushell/catppuccin_mocha.nu", "target": "~/.config/nushell/catppuccin_mocha.nu" },
 		{ "source": "config/nushell/config.nu",           "target": "~/.config/nushell/config.nu" },
 		{ "source": "config/nushell/starship.nu",         "target": "~/.config/nushell/starship.nu" },
-		{ "source": "config/nushell/zoxide.nu",           "target": "~/.config/nushell/zoxide.nu" }
+		{ "source": "config/nushell/zoxide.nu",           "target": "~/.config/nushell/zoxide.nu" },
+		{ "source": "config/television",                  "target": "~/.config/television" }
 	]
 }
