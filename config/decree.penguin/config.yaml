@@ -1,5 +1,5 @@
 settings:
-autoUpgrade: true
+  autoUpgrade: true
 
 packages:
   brew:
