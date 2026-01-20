@@ -53,6 +53,8 @@ packages:
     - "stikypiston/formulae/termfarm"
     - "nushell"
     - "typst"
+    - "yamllint"
+    - "tree-sitter-cli"
   deb:
     - "zsh"
     - "mangohud"
