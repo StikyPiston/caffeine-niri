@@ -1,11 +1,11 @@
-$env.PATH = ( $env.PATH | append "$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
-$env.PATH = ( $env.PATH | append "$env.HOME/.local/share/bob/nvim-bin" )
-$env.PATH = ( $env.PATH | append "$env.HOME/Documents/PlaydateSDK-3.0.2/bin" )
-$env.PATH = ( $env.PATH | append "$env.HOME/Applications" )
-$env.PATH = ( $env.PATH | append "$env.HOME/.scripts" )
-$env.PATH = ( $env.PATH | append "$env.HOME/.cargo/bin" )
-$env.PATH = ( $env.PATH | append "$env.HOME/.local/share/gem/ruby/3.4.0/bin" )
-$env.PATH = ( $env.PATH | append "$env.HOME/.local/bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/bob/nvim-bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/Documents/PlaydateSDK-3.0.2/bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/Applications" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.scripts" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.cargo/bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/gem/ruby/3.4.0/bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/bin" )
 
 source catppuccin_mocha.nu
 source starship.nu
