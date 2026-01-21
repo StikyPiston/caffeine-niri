@@ -45,10 +45,10 @@ $env.PLAYDATE_SDK_PATH = "$env.HOME/Documents/PlaydateSDK-3.0.2"
 
 $env.HOMEBREW_NO_ENV_HINTS = 1
 
-recall list
-fastcards amount
-hocusfocus currentsession
-termfarm stats
+/home/linuxbrew/.linuxbrew/bin/recall list
+/home/linuxbrew/.linuxbrew/bin/fastcards amount
+/home/linuxbrew/.linuxbrew/bin/hocusfocus currentsession
+/home/linuxbrew/.linuxbrew/bin/termfarm stats
 open ~/.scripts/motds.txt | lines | shuffle | first | $"󰆈 ($in)"
 
 $env.FZF_DEFAULT_OPTS = "
