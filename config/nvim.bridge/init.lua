@@ -107,7 +107,7 @@ require("lazy").setup({
 	spec = {
 		{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 		{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate", config = function()
-			require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'latex', 'yaml', 'typst', 'zsh' })
+			require("nvim-treesitter").install({ 'c', 'lua', 'swift', 'ruby', 'hyprlang', 'bash', 'go', 'gomod', 'gosum', 'kdl', 'markdown', 'markdown_inline', 'python', 'vhs', 'html', 'yaml', 'typst', 'zsh' })
 			vim.api.nvim_create_autocmd('FileType', {
 				pattern = { '<filetype>' },
 				callback = function() vim.treesitter.start() end
