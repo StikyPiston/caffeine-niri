@@ -16,7 +16,6 @@ source completers.nu
 
 $env.config.show_banner = false
 
-
 $env.BAT_THEME         = "Catppuccin Mocha"
 $env.EDITOR            = "$env.HOME/.local/share/bob/nvim-bin/nvim"
 $env.PLAYDATE_SDK_PATH = "$env.HOME/Documents/PlaydateSDK-3.0.2"
