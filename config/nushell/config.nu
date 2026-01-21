@@ -1,3 +1,15 @@
+#     _   __           __         ____
+#    / | / /_  _______/ /_  ___  / / /
+#   /  |/ / / / / ___/ __ \/ _ \/ / /
+#  / /|  / /_/ (__  ) / / /  __/ / /
+# /_/ |_/\__,_/____/_/ /_/\___/_/_/
+#                   __ _
+#   ___ ___  _ __  / _(_) __ _   _ __  _   _
+#  / __/ _ \| '_ \| |_| |/ _` | | '_ \| | | |
+# | (_| (_) | | | |  _| | (_| |_| | | | |_| |
+#  \___\___/|_| |_|_| |_|\__, (_)_| |_|\__,_|
+#                        |___/
+
 $env.PATH = ( $env.PATH | prepend "/home/linuxbrew/.linuxbrew/bin" )
 $env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/bob/nvim-bin" )
 $env.PATH = ( $env.PATH | prepend "$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
