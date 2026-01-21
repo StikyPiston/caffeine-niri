@@ -32,6 +32,7 @@
 		{ "source": "config/nushell/config.nu",           "target": "~/.config/nushell/config.nu" },
 		{ "source": "config/nushell/starship.nu",         "target": "~/.config/nushell/starship.nu" },
 		{ "source": "config/nushell/zoxide.nu",           "target": "~/.config/nushell/zoxide.nu" },
+		{ "source": "config/nushell/completers.nu",       "target": "~/.config/nushell/completers.nu" },
 		{ "source": "config/television",                  "target": "~/.config/television" }
 	]
 }

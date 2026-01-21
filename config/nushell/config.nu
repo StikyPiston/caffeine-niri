@@ -12,6 +12,7 @@ $env.PATH = ( $env.PATH | prepend "$env.HOME/.local/bin" )
 source catppuccin_mocha.nu
 source starship.nu
 source zoxide.nu
+source completers.nu
 
 $env.config.show_banner = false
 
