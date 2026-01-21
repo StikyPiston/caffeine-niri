@@ -1,4 +1,5 @@
 $env.PATH = ( $env.PATH | prepend "/home/linuxbrew/.linuxbrew/bin" )
+$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/bob/nvim-bin" )
 $env.PATH = ( $env.PATH | prepend "$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
 $env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/bob/nvim-bin" )
 $env.PATH = ( $env.PATH | prepend "$env.HOME/Documents/PlaydateSDK-3.0.2/bin" )
