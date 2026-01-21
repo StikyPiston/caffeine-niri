@@ -55,6 +55,7 @@ packages:
     - "typst"
     - "yamllint"
     - "tree-sitter-cli"
+    - "television"
   deb:
     - "zsh"
     - "mangohud"
