@@ -41,6 +41,7 @@ alias sb  = soft browse
 alias lg  = lazygit
 alias man = tldr
 alias sf  = spf
+alias cal = cal -t
 
 $env.BAT_THEME         = "Catppuccin Mocha"
 $env.EDITOR            = "$env.HOME/.local/share/bob/nvim-bin/nvim"
