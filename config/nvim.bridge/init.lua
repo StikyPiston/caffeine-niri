@@ -77,7 +77,6 @@ map('n', '<A-Up>',     function() require("multicursor-nvim").lineAddCursor(-1) 
 map('n', '<A-Down>',   function() require("multicursor-nvim").lineAddCursor(1) end)
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
 map('n', '<leader>cs', ':Cheaty<CR>')
-map('n', '<leader>cf', ':Coinflip<CR>')
 map('n', '<leader>lz', ':Lazy<CR>')
 map('n', '<leader>ld', ':Trouble diagnostics<CR>')
 map('n', '<leader>ot', function() Snacks.terminal.open() end)
@@ -139,7 +138,6 @@ require("lazy").setup({
 		{ "nvim-lualine/lualine.nvim", event = "VeryLazy" },
 		{ "dstein64/vim-startuptime", cmd = "StartupTime" },
 		{ "brenoprata10/nvim-highlight-colors", config = function() require("nvim-highlight-colors").setup({}) end },
-		{ "stikypiston/coinflip.nvim", cmd = { "Coinflip" }, config = function() require("coinflip").setup() end },
 		{ "Zeioth/markmap.nvim", opts = {
 				build = "yarn global add markmap-cli",
 				cmd   = { "MarkmapOpen", "MarkmapSave", "MarkmapWatch", "MarkmapWatchStop" },
