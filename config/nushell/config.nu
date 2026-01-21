@@ -27,7 +27,7 @@ alias tree  = tree -LC 1
 alias ncdu  = ncdu --color dark --show-percent
 alias clear = /bin/clear -x
 
-alias nv = nvim
+alias nv = /home/distrorockhopper/.local/share/bob/nvim-bin/nvim
 
 alias gs = git status
 alias ga = git add
