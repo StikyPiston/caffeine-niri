@@ -64,3 +64,4 @@ packages:
     - "lolcat"
     - "tmux"
     - "libfuse2"
+    - "flatpak"
