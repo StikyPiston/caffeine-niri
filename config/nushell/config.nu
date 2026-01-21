@@ -13,6 +13,7 @@ source catppuccin_mocha.nu
 source starship.nu
 source zoxide.nu
 source completers.nu
+source aliases.nu
 
 $env.config.show_banner = false
 
