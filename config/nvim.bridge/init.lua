@@ -72,7 +72,7 @@ map('n', '<leader>ms', ':MarkmapSave')
 map('n', '<leader>r',  ':%s/')
 map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
 map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
-map('n', '<leader>bb', ':StudytoolsBlurt<CR>')
+map('n', '<leader>sb', ':StudytoolsBlurt<CR>')
 map('n', '<A-Up>',     function() require("multicursor-nvim").lineAddCursor(-1) end)
 map('n', '<A-Down>',   function() require("multicursor-nvim").lineAddCursor(1) end)
 map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
@@ -185,7 +185,7 @@ require("lazy").setup({
 					"## Studytools",
 					"- <leader>sp : Start Pomodoro timer (25/5 minute intervals)",
 					"- <leader>sP : Pomodoro timer status",
-					"- <leader>bb : Start blurting buffer",
+					"- <leader>sb : Start blurting buffer",
 					"",
 					"### Inline Annotations",
 					"- !IMPORTANT!",
