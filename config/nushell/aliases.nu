@@ -24,3 +24,6 @@ alias lg  = lazygit
 alias man = tldr
 alias sf  = spf
 alias cal = cal -t
+
+alias yz = yazi
+alias cd = z
