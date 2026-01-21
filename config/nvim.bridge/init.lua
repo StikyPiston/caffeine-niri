@@ -123,10 +123,6 @@ require("lazy").setup({
 			end
 		},
 		{ "oxy2dev/markview.nvim", ft = { "markdown", "html", "latex", "typst", "yaml" } },
-		{ "folke/flash.nvim", opts = {}, event = "VeryLazy", keys = {
-				{ "<C-s>", mode = { "n", "x", "o", "v" }, function() require("flash").jump() end }
-			}
-		},
 		{ "gisketch/triforce.nvim", config = function() require("triforce").setup() end },
 		{ "nvzone/volt" },
 		{ "stephansama/fzf-nerdfont.nvim", cmd = "FzfNerdfont" },
