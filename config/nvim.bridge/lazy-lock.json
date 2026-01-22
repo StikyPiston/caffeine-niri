@@ -39,7 +39,7 @@
   "triforce.nvim": { "branch": "main", "commit": "6e1365cfed7d09713129d617ece4fa01287e627b" },
   "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },
   "typr": { "branch": "main", "commit": "584e4ef34dea25a4035627794322f315b22d1253" },
-  "unobtrusive-relnums.nvim": { "branch": "main", "commit": "5a141612431dfe10ad365eda84bccb0b19bace8b" },
+  "unobtrusive-relnums.nvim": { "branch": "main", "commit": "53640b502cd367c9b34bf7c6afe220f3faa5f300" },
   "vim-startuptime": { "branch": "master", "commit": "b6f0d93f6b8cf6eee0b4c94450198ba2d6a05ff6" },
   "volt": { "branch": "main", "commit": "620de1321f275ec9d80028c68d1b88b409c0c8b1" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
