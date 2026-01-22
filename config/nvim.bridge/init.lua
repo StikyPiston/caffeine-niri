@@ -412,7 +412,7 @@ vim.api.nvim_create_user_command(
 
 -- > Lua language server
 vim.lsp.config("lua_ls", {
-	cmd = { '/usr/sbin/lua-language-server' },
+	cmd = { 'lua-language-server' },
 	filetypes = { 'lua' },
 	root_markers = {
 		'.luarc.json',
