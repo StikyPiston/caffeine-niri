@@ -58,6 +58,7 @@ packages:
     - "television"
     - "imagemagick"
     - "pipes-sh"
+    - "lua-language-server"
   deb:
     - "zsh"
     - "mangohud"
