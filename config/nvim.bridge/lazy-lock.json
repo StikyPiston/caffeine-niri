@@ -16,7 +16,7 @@
   "marks.nvim": { "branch": "master", "commit": "f353e8c08c50f39e99a9ed474172df7eddd89b72" },
   "markview.nvim": { "branch": "main", "commit": "900272b66043d5e3d3f5a74b34eb4e93d3a0ce88" },
   "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },
-  "mini.nvim": { "branch": "main", "commit": "c163117900c17d4abf30bc09452a261c8536060c" },
+  "mini.nvim": { "branch": "main", "commit": "9b935c218ddba02e5dc75c94f90143bce1f7c646" },
   "multicursor.nvim": { "branch": "main", "commit": "3b5c79c4eec52ff18ce69923156422c298b9ae5d" },
   "neowiki.nvim": { "branch": "main", "commit": "86f705604f9f2e6c1a0f238ebe8df9fb843e71c7" },
   "noice.nvim": { "branch": "main", "commit": "7bfd942445fb63089b59f97ca487d605e715f155" },
@@ -39,6 +39,7 @@
   "triforce.nvim": { "branch": "main", "commit": "6e1365cfed7d09713129d617ece4fa01287e627b" },
   "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },
   "typr": { "branch": "main", "commit": "584e4ef34dea25a4035627794322f315b22d1253" },
+  "unobtrusive-relnums.nvim": { "branch": "main", "commit": "36c9a153e143613e7e792378e890484abaa95b90" },
   "vim-startuptime": { "branch": "master", "commit": "b6f0d93f6b8cf6eee0b4c94450198ba2d6a05ff6" },
   "volt": { "branch": "main", "commit": "620de1321f275ec9d80028c68d1b88b409c0c8b1" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
