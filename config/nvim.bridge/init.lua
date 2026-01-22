@@ -296,7 +296,7 @@ require("lazy").setup({
 			}
 		},
 		{ "l3mon4d3/luasnip", dependencies = { "rafamadriz/friendly-snippets" } },
-		{ "stikypiston/unobtrusive-relnums.nvim", opts = {} }
+		{ "stikypiston/unobtrusive-relnums.nvim", opts = { priority = 10 } }
 	  },
 	install = { colorscheme = { "catppuccin-mocha" } },
 	checker = { enabled = true },
