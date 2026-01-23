@@ -503,22 +503,3 @@ enableLSP("bash", "bash-language-server")
 vim.diagnostic.config({
 	virtual_text = true
 })
-
--- Abbreviations
-local function abbreviate(ft, abbr, full)
-	vim.api.nvim_create_autocmd("FileType", {
-		pattern  = ft,
-		callback = function()
-			vim.cmd("abbreviate " .. abbr .. " " .. full)
-		end
-	})
-end
-
--- > Lua abbreviations
-abbreviate("lua", "@nvim.plugin@", [[local M = {} return M]])
-abbreviate("lua", "@todo@",        "-- TODO: ")
-abbreviate("lua", "@fix",          "-- FIX: ")
-
--- > Swift abbreviations
-abbreviate("swift", "@todo@", "// TODO: ")
-abbreviate("swift", "@fix",   "// FIX: ")
