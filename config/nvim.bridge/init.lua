@@ -229,7 +229,6 @@ require("lazy").setup({
 		{ "folke/snacks.nvim", opts = {
 				image     = { enabled = true },
 				quickfile = { enabled = true },
-				scroll    = { enabled = true, animate = { duration = { step = 1, total = 10 } } },
 				notifier  = { enabled = true },
 				lazygit   = { enabled = true },
 				indent    = { enabled = true },
