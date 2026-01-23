@@ -1,5 +1,6 @@
 {
   "position": "left",
+  "layer": "top",
   "modules-left": ["hyprland/workspaces", "niri/workspaces"],
   "modules-center": ["mpris"],
   "modules-right": ["tray", "custom/spacer", "custom/pacman", "custom/spacer", "temperature", "custom/spacer", "battery", "custom/spacer", "pulseaudio", "custom/spacer", "clock"],
@@ -53,7 +54,8 @@
   	},
   	"status-icons": {
   		"paused": ""
-  	}
+  	},
+	"max-length": 25
   },
   "temperature": {
 	  	"rotate": 90,
