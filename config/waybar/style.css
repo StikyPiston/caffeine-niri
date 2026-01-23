@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-    background: transparent;
-    background-color: @crust;
+	background: transparent;
+    background: rgba(17, 17, 27, 0.85);
     color: @mauve;
     transition-property: background-color;
     transition-duration: 0.1s;
@@ -41,13 +41,11 @@ button:hover {
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
     color: @mauve;
-    border-top: 2px solid @mauve;
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
     color: @mauve;
-    border-top: 2px solid @mauve;
 }
 
 #workspaces button.urgent {

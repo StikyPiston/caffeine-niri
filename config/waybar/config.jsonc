@@ -81,5 +81,14 @@
   "custom/spacer": {
 	  "rotate": 90,
 	  "format": "|"
+  },
+    "niri/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "active": "",
+      "urgent": "",
+      "default": ""
+    }
   }
 }
