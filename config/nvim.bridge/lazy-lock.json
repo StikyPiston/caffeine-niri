@@ -32,7 +32,7 @@
   "smudge.nvim": { "branch": "main", "commit": "f27b59dd33f7aca0ce3b221342dd6ecdc11c06b7" },
   "snacks.nvim": { "branch": "main", "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b" },
   "studytools.nvim": { "branch": "main", "commit": "12534383700b0835fe541f0cbdae99add975c4c8" },
-  "telescope.nvim": { "branch": "master", "commit": "0d8b6eaa0b5ae6bb3d9785f7a3ba4a4c6c1b1af2" },
+  "telescope.nvim": { "branch": "master", "commit": "ad7d9580338354ccc136e5b8f0aa4f880434dcdc" },
   "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "tree-sitter-vhs": { "branch": "main", "commit": "0c6fae9d2cfc5b217bfd1fe84a7678f5917116db" },
   "triforce.nvim": { "branch": "main", "commit": "6e1365cfed7d09713129d617ece4fa01287e627b" },
