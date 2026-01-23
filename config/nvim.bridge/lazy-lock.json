@@ -14,7 +14,7 @@
   "luasnip": { "branch": "master", "commit": "dae4f5aaa3574bd0c2b9dd20fb9542a02c10471c" },
   "markmap.nvim": { "branch": "main", "commit": "c09ad672404d050e8665e3094f892b87cf17d8cb" },
   "marks.nvim": { "branch": "master", "commit": "f353e8c08c50f39e99a9ed474172df7eddd89b72" },
-  "markview.nvim": { "branch": "main", "commit": "900272b66043d5e3d3f5a74b34eb4e93d3a0ce88" },
+  "markview.nvim": { "branch": "main", "commit": "c81ce9ed129387fc5fdec91abe9818a1b0e6fcac" },
   "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },
   "mini.nvim": { "branch": "main", "commit": "9b935c218ddba02e5dc75c94f90143bce1f7c646" },
   "multicursor.nvim": { "branch": "main", "commit": "3b5c79c4eec52ff18ce69923156422c298b9ae5d" },
