@@ -1,13 +1,15 @@
 {
-  "position": "bottom",
+  "position": "left",
   "modules-left": ["hyprland/workspaces", "niri/workspaces"],
   "modules-center": ["mpris"],
-  "modules-right": ["tray", "custom/pacman", "temperature", "battery", "pulseaudio", "clock"],
+  "modules-right": ["tray", "custom/spacer", "custom/pacman", "custom/spacer", "temperature", "custom/spacer", "battery", "custom/spacer", "pulseaudio", "custom/spacer", "clock"],
   "clock": {
+	"rotate": 90,
     "format": "<span foreground='#f2cdcd'> </span>{:%H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "battery": {
+	"rotate": 90,
     "states": {
       "warning": 30,
       "critical": 15
@@ -23,6 +25,7 @@
     "tooltip-format": "{time}"
   },
   "mpd": {
+	"rotate": 90,
   	"server": "127.0.0.1",
   	"interval": 10,
   	"format": "{artist} - {title}",
@@ -31,6 +34,7 @@
   	"format-disconnected": "! MPD unreachable"
   },
   "pulseaudio": {
+	  "rotate": 90,
       "format": "{icon} {volume}%",
       "format-muted": "X Muted",
       "format-icons": {
@@ -39,6 +43,7 @@
       "on-click": "pavucontrol"
   },
   "mpris": {
+	"rotate": 90,
   	"format": "{player_icon} {dynamic}",
   	"format-paused": "{status_icon} <i>{dynamic}</i>",
 	"interval": 1,
@@ -51,6 +56,7 @@
   	}
   },
   "temperature": {
+	  	"rotate": 90,
 		"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
 		"critical-threshold": 80,
 		"format": "{icon} {temperatureC}°C",
@@ -61,6 +67,7 @@
     		]
   },
   "custom/pacman": {
+	"rotate": 90,
   	"format": "{icon} {0}",
   	"return-type": "json",
   	"format-icons": {
@@ -68,5 +75,9 @@
   		"updated": ""
   	},
   	"exec": "waybar-updates"
+  },
+  "custom/spacer": {
+	  "rotate": 90,
+	  "format": "|"
   }
 }

@@ -13,7 +13,7 @@ window#waybar {
     color: @mauve;
     transition-property: background-color;
     transition-duration: 0.1s;
-    border-bottom: 1px solid @surface0;
+    border-right: 1px solid @surface0;
 }
 
 #window {
@@ -77,22 +77,22 @@ button:hover {
 
 #clock {
     color: @flamingo;
-    border-bottom: 2px solid @flamingo;
+    border-right: 2px solid @flamingo;
 }
 
 #clock.date {
     color: @mauve;
-    border-bottom: 2px solid @mauve;
+    border-right: 2px solid @mauve;
 }
 
 #pulseaudio {
     color: @pink;
-    border-bottom: 2px solid @pink;
+    border-right: 2px solid @pink;
 }
 
 #network {
     color: @peach;
-    border-bottom: 2px solid @peach;
+    border-right: 2px solid @peach;
 }
 
 #idle_inhibitor {
@@ -106,7 +106,7 @@ button:hover {
 
 #battery {
     color: @mauve;
-    border-bottom: 2px solid @mauve;
+    border-right: 2px solid @mauve;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -128,23 +128,27 @@ button:hover {
 
 #mpris {
     color: @maroon;
-    border-bottom: 2px solid @maroon;
+    border-right: 2px solid @maroon;
 }
 
 #tray {
     color: @overlay1;
-	border-bottom: 2px solid @overlay1;
+	border-right: 2px solid @overlay1;
 }
 
 #temperature {
 		color: @mauve;
-		border-bottom: 2px solid @mauve;
+		border-right: 2px solid @mauve;
 }
 
 #custom-pacman {
     color: @mauve;
-    border-bottom: 2px solid @mauve;
+    border-right: 2px solid @mauve;
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+#custom-spacer {
+	color: @crust;
 }
 
