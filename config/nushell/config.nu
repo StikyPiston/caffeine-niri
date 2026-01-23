@@ -11,15 +11,15 @@
 #                        |___/
 
 $env.PATH = ( $env.PATH | prepend "/home/linuxbrew/.linuxbrew/bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/bob/nvim-bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/bob/nvim-bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/Documents/PlaydateSDK-3.0.2/bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/Applications" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.scripts" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.cargo/bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/share/gem/ruby/3.4.0/bin" )
-$env.PATH = ( $env.PATH | prepend "$env.HOME/.local/bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.local/share/bob/nvim-bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.local/share/bob/nvim-bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2/bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/Applications" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.scripts" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.cargo/bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.local/share/gem/ruby/3.4.0/bin" )
+$env.PATH = ( $env.PATH | prepend "/home/distrorockhopper/.local/bin" )
 
 source catppuccin_mocha.nu
 source starship.nu
@@ -30,8 +30,8 @@ source aliases.nu
 $env.config.show_banner = false
 
 $env.BAT_THEME         = "Catppuccin Mocha"
-$env.EDITOR            = "$env.HOME/.local/share/bob/nvim-bin/nvim"
-$env.PLAYDATE_SDK_PATH = "$env.HOME/Documents/PlaydateSDK-3.0.2"
+$env.EDITOR            = "/home/distrorockhopper/.local/share/bob/nvim-bin/nvim"
+$env.PLAYDATE_SDK_PATH = "/home/distrorockhopper/Documents/PlaydateSDK-3.0.2"
 
 $env.HOMEBREW_NO_ENV_HINTS = 1
 
