@@ -68,12 +68,13 @@ button:hover {
   margin-bottom: 2px;
   margin-left: 4px;
   margin-right: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+  /* padding-left: 4px; */
+  /* padding-right: 4px; */
   padding-top: 4px;
   padding-bottom: 4px;
   background: rgba(17, 17, 27, 0.85);
-  border-radius: 10px
+  border-radius: 10px;
+  min-width: 0;
 }
 
 #clock {
