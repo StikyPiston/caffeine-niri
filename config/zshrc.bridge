@@ -81,3 +81,5 @@ alias y=yz
 eval "$(zoxide init zsh)"
 
 alias cd=z
+
+if [ -e /home/distrorockhopper/.nix-profile/etc/profile.d/nix.sh ]; then . /home/distrorockhopper/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
