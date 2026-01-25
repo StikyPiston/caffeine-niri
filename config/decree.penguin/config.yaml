@@ -59,6 +59,8 @@ packages:
     - "imagemagick"
     - "pipes-sh"
     - "lua-language-server"
+    - "node"
+    - "uv"
   deb:
     - "zsh"
     - "mangohud"
