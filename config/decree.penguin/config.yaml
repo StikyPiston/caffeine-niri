@@ -61,6 +61,7 @@ packages:
     - "lua-language-server"
     - "node"
     - "uv"
+    - "pkgx"
   deb:
     - "zsh"
     - "mangohud"
